@@ -1,0 +1,25 @@
+[gd_scene format=2]
+
+[node name="Imagen" type="Node2D"]
+
+[node name="Fondo" type="Sprite" parent="."]
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="mascara1" type="Sprite" parent="Node2D"]
+
+[node name="mascara2" type="Sprite" parent="Node2D"]
+
+[node name="mascara3" type="Sprite" parent="Node2D"]
+
+[node name="mascara4" type="Sprite" parent="Node2D"]
+
+[node name="mascara5" type="Sprite" parent="Node2D"]
+
+[node name="mascara6" type="Sprite" parent="Node2D"]
+
+[node name="mascara7" type="Sprite" parent="Node2D"]
+
+[node name="mascara8" type="Sprite" parent="Node2D"]
+
+[node name="mascara9" type="Sprite" parent="Node2D"]
