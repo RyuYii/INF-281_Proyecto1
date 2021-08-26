@@ -7,13 +7,13 @@
 script = ExtResource( 2 )
 
 [node name="Imagen" parent="." instance=ExtResource( 1 )]
-position = Vector2( 377.741, 62.2001 )
+position = Vector2( 342.423, 43.7004 )
 
 [node name="Area" type="Control" parent="."]
-margin_left = 2.99646
-margin_top = 44.9492
-margin_right = 366.996
-margin_bottom = 791.949
+margin_left = 81.8639
+margin_top = 218.636
+margin_right = 318.864
+margin_bottom = 595.636
 __meta__ = {
 "_edit_use_anchors_": false
 }
