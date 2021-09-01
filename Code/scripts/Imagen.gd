@@ -74,12 +74,43 @@ func _encaja(nodo, n):
 	if mi_numero == nodo_entrante:
 		#Llamamos al nodo entrante en la escena principal.
 		pza = get_node("../" + nodo.get_parent().get_name())
+		print(pza)
 		#Indicamos que hay una pieza la casilla correcta.
 		esta_dentro = true
 		
 func _desencaja(_nodo):
 	#Indicamos que se fué una pieza de la casilla correcta.
 	esta_dentro = false
+
+func mostrarDialog(depto):
+	#format [[name,[datos,...]],...]
+	#data
+	var data = [
+		['La Paz',['DES1','DES2']],
+		['Oruro',['DES1','DES2']],
+		['Potosi',['DES1','DES2']],
+		['Tarija',['DES1','DES2']],
+		['Chuquisaca',['DES1','DES2']],
+		['Cochabamba',['DES1','DES2']],
+		['Beni',['DES1','DES2']],
+		['Santa Cruz',['DES1','DES2']],
+		['Pando',['DES1','DES2']]
+		]
+	
+	var pieza = preload("res://scenes/Dialog_box.tscn").instance()
+	#Le ponemos nombre.
+	#pieza.set_name('Dialog')
+	#pieza.scale -= Vector2(escalas[i][0],escalas[i][1])
+	#Añadimos la pieza al nodo raíz.
+	var titulo = pieza.get_children()[0].get_children()[1].get_children()[0]
+	var descripcion = pieza.get_children()[0].get_children()[0].get_children()[0]
+#	print(titulo.name,' dsafsdagadsg')
+	titulo.text = data[int(depto)-1][0]
+	descripcion.text = data[int(depto)-1][1][randi() % len(data[int(depto)-1][1])]
+	print(get_parent().name,'####################')
+	get_parent().add_child(pieza)
+	var lugar = Vector2(640,410)
+	pieza.set_global_position(lugar)
 	
 func _physics_process(_delta):
 	#Si la pieza correcta esta en la casilla.
@@ -93,9 +124,11 @@ func _physics_process(_delta):
 			pza.queue_free()
 			#Indicamos que llevamos una pieza correcta:
 			acumulado += 1
+			mostrarDialog(n_pza)
 			
 	if acumulado == piezas.x * piezas.y:
 		#Si ponemos todas las piezas: cambiamos de escena.
 		# warning-ignore:return_value_discarded
-		get_tree().change_scene("res://Inicio.tscn")
+		print('Victoryyyyyy!!!!!!!!!')
+		#get_tree().change_scene("res://Inicio.tscn")
 	

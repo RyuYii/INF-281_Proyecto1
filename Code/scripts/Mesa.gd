@@ -18,6 +18,7 @@ func _ready():
 	#Generamos aleatoridad.
 	randomize()
 	var area = get_node("Area").get_rect()
+	#var scroll1 = get_node("scroll/fichas")
 	
 	for i in range(1, numero_piezas + 1):
 		#Instanciamos la pieza.
@@ -27,6 +28,7 @@ func _ready():
 		pieza.scale -= Vector2(escalas[i][0],escalas[i][1])
 		#Añadimos la pieza al nodo raíz.
 		add_child(pieza)
+		#scroll1.add_child(pieza)
 		#Posicionamos la pieza al azar dentro del area
 		var lugar = Vector2(randi() % int(area.size.x),randi() % int(area.size.y))
 		lugar = lugar + area.position

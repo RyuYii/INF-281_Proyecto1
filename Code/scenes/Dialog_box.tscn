@@ -1,0 +1,164 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://src/img/background.jpg" type="Texture" id=1]
+[ext_resource path="res://scripts/Dialog_box.gd" type="Script" id=2]
+
+[sub_resource type="DynamicFontData" id=1]
+font_path = "res://src/fonts/Summer Calling/Summer Calling.ttf"
+
+[sub_resource type="DynamicFont" id=2]
+extra_spacing_top = 2
+extra_spacing_char = 2
+extra_spacing_space = 1
+font_data = SubResource( 1 )
+
+[sub_resource type="Animation" id=3]
+resource_name = "TextDisplay"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:percent_visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.5, 1.0 ]
+}
+
+[sub_resource type="DynamicFontData" id=4]
+font_path = "res://src/fonts/Summer Calling/Summer Calling.ttf"
+
+[sub_resource type="DynamicFont" id=5]
+size = 20
+font_data = SubResource( 4 )
+
+[sub_resource type="DynamicFontData" id=6]
+hinting = 1
+font_path = "res://src/fonts/Summer Calling/Summer Calling.ttf"
+
+[sub_resource type="DynamicFont" id=7]
+size = 22
+font_data = SubResource( 6 )
+
+[sub_resource type="Animation" id=8]
+resource_name = "PressSpace"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rect_scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 1.1, 1.1 ), Vector2( 1, 1 ) ]
+}
+
+[node name="Dialog_box" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BodyNinePatchRect" type="NinePatchRect" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -400.0
+margin_top = -250.0
+margin_right = 400.0
+margin_bottom = 250.0
+rect_min_size = Vector2( 800, 500 )
+texture = ExtResource( 1 )
+patch_margin_left = 5
+patch_margin_top = 5
+patch_margin_right = 5
+patch_margin_bottom = 5
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MarginContainer" type="MarginContainer" parent="BodyNinePatchRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 40.0
+margin_top = 96.0
+margin_right = -40.0
+margin_bottom = -96.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BodyLabel" type="Label" parent="BodyNinePatchRect/MarginContainer"]
+margin_right = 720.0
+margin_bottom = 308.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = SubResource( 2 )
+text = "Aqui ira el texto con los datos curiosos de los deptos xD Para mas informacion dale like..."
+autowrap = true
+percent_visible = 0.0
+
+[node name="BodyAnimationPlayer" type="AnimationPlayer" parent="BodyNinePatchRect/MarginContainer/BodyLabel"]
+autoplay = "TextDisplay"
+anims/TextDisplay = SubResource( 3 )
+
+[node name="SpeakerNinePatchRect" type="NinePatchRect" parent="BodyNinePatchRect"]
+margin_left = -22.1784
+margin_top = -16.8216
+margin_right = 255.822
+margin_bottom = 62.1784
+texture = ExtResource( 1 )
+patch_margin_left = 5
+patch_margin_top = 5
+patch_margin_right = 5
+patch_margin_bottom = 5
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SpeakerLabel" type="Label" parent="BodyNinePatchRect/SpeakerNinePatchRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = SubResource( 5 )
+text = "Speaker"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SpaceNinePatchRect2" type="NinePatchRect" parent="BodyNinePatchRect"]
+margin_left = 525.017
+margin_top = 434.151
+margin_right = 840.017
+margin_bottom = 521.151
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SpaceLabel" type="Label" parent="BodyNinePatchRect/SpaceNinePatchRect2"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 1.05951
+margin_bottom = 1.05951
+custom_fonts/font = SubResource( 7 )
+text = "Press"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SpaceAnimationPlayer" type="AnimationPlayer" parent="BodyNinePatchRect/SpaceNinePatchRect2"]
+autoplay = "PressSpace"
+anims/PressSpace = SubResource( 8 )
