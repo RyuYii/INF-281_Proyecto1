@@ -172,7 +172,7 @@ func mostrarDialog(depto):
 	titulo.text = data[depto]['titulo']
 	var nroDato = randi() % len(data[depto]['datos'])
 	descripcion.text = data[depto]['datos'][nroDato][0]
-	
+	#imagen = data[depto]['datos'][nroDato][1]
 	
 	#para que se muestre sobre todo
 	get_parent().add_child(pieza)
