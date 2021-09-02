@@ -145,6 +145,8 @@ func mostrarDialog(depto):
 	titulo.text = data[depto]['titulo']
 	var nroDato = randi() % len(data[depto]['datos'])
 	descripcion.text = data[depto]['datos'][nroDato][0]
+	var textura = load("res://src/img/fondo.png")
+	pieza.get_node("BodyNinePatchRect/ImgRef").set_texture(textura)
 	
 	
 	#para que se muestre sobre todo
