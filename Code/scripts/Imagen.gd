@@ -1,4 +1,70 @@
+
 extends Node2D
+var data = {
+	'1': {
+		'titulo': 'La Paz',
+		'datos': [
+			['dato1','imgurl'],
+			['dato2','imgurl']
+				]
+		},
+	'2': {
+		'titulo': 'Oruro',
+		'datos': [
+			['dato1','imgurl'],
+			['dato2','imgurl']
+				]
+		},
+	'3': {
+		'titulo': 'Potosi',
+		'datos': [
+			['dato1','imgurl'],
+			['dato2','imgurl']
+				]
+		},
+	'4': {
+		'titulo': 'Tarija',
+		'datos': [
+			['dato1','imgurl'],
+			['dato2','imgurl']
+				]
+		},
+	'5': {
+		'titulo': 'Chuquisaca',
+		'datos': [
+			['dato1','imgurl'],
+			['dato2','imgurl']
+				]
+		},
+	'6': {
+		'titulo': 'Cochabamba',
+		'datos': [
+			['dato1','imgurl'],
+			['dato2','imgurl']
+				]
+		},
+	'7': {
+		'titulo': 'Beni',
+		'datos': [
+			['dato1','imgurl'],
+			['dato2','imgurl']
+				]
+		},
+	'8': {
+		'titulo': 'Santa Cruz',
+		'datos': [
+			['dato1','imgurl'],
+			['dato2','imgurl']
+				]
+		},
+	'9': {
+		'titulo': 'Pando',
+		'datos': [
+			['dato1','imgurl'],
+			['dato2','imgurl']
+				]
+		}
+	}
 
 #Cuantas piezas tienes de ancho y de alto.
 var piezas = Vector2(3, 3)
@@ -71,30 +137,33 @@ func _desencaja(_nodo):
 func mostrarDialog(depto):
 	#format [[name,[datos,...]],...]
 	#data
-	var data = [
-		['La Paz',['DES1','DES2']],
-		['Oruro',['DES1','DES2']],
-		['Potosi',['DES1','DES2']],
-		['Tarija',['DES1','DES2']],
-		['Chuquisaca',['DES1','DES2']],
-		['Cochabamba',['DES1','DES2']],
-		['Beni',['DES1','DES2']],
-		['Santa Cruz',['DES1','DES2']],
-		['Pando',['DES1','DES2']]
-		]
+#	var data = [
+#		['La Paz',['DES1','DES2']],
+#		['Oruro',['DES1','DES2']],
+#		['Potosi',['DES1','DES2']],
+#		['Tarija',['DES1','DES2']],
+#		['Chuquisaca',['DES1','DES2']],
+#		['Cochabamba',['DES1','DES2']],
+#		['Beni',['DES1','DES2']],
+#		['Santa Cruz',['DES1','DES2']],
+#		['Pando',['DES1','DES2']]
+#		]
 	
 	var pieza = preload("res://scenes/Dialog_box.tscn").instance()
-	#Le ponemos nombre.
-	#pieza.set_name('Dialog')
-	#pieza.scale -= Vector2(escalas[i][0],escalas[i][1])
-	#Añadimos la pieza al nodo raíz.
+
+	#obtenemos las variables que modificaremos
 	var titulo = pieza.get_children()[0].get_children()[1].get_children()[0]
 	var descripcion = pieza.get_children()[0].get_children()[0].get_children()[0]
-#	print(titulo.name,' dsafsdagadsg')
-	titulo.text = data[int(depto)-1][0]
-	descripcion.text = data[int(depto)-1][1][randi() % len(data[int(depto)-1][1])]
-	print(get_parent().name,'####################')
+#	
+	titulo.text = data[depto]['titulo']
+	var nroDato = randi() % len(data[depto]['datos'])
+	descripcion.text = data[depto]['datos'][nroDato][0]
+	
+	
+	#para que se muestre sobre todo
 	get_parent().add_child(pieza)
+	
+	#centramos
 	var lugar = Vector2(640,410)
 	pieza.set_global_position(lugar)
 	
