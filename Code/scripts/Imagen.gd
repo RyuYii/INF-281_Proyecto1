@@ -43,20 +43,6 @@ func _ready():
 		#Creamos un nodo "Area2D".
 		var nodo_area = m.get_node("Area2D")
 #		var nodo_area = Area2D.new()
-#		
-#		#Creamos una colisión.
-#		var nodo_colision = CollisionShape2D.new()
-#		#Creamos una forma de colisión.
-#		var forma = RectangleShape2D.new()
-#
-#		#Tamaño de la colisión.
-#		forma.set_extents(colision)
-#		#Agregamos la "forma" a la "colisión".
-#		nodo_colision.set_shape(forma)
-#		#Ponemos el "nodo_colision" como hijo de "nodo_area".
-#		nodo_area.add_child(nodo_colision)
-#		#Ponemos el "nodo_area" como hijo de "máscara".
-#		m.add_child(nodo_area)
 		#Conectamos la señal "area_entered" a la funcion "_encaja".
 		nodo_area.connect("area_entered", self, "_encaja", [n + 1])
 		#Conectamos la señal "area_exited" a la funcion "_desencaja".
