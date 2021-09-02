@@ -2,63 +2,91 @@
 extends Node2D
 var data = {
 	'1': {
-		'titulo': 'La Paz',
+		'titulo': 'Guayana Francesa',
 		'datos': [
 			['dato1','imgurl'],
 			['dato2','imgurl']
 				]
 		},
 	'2': {
-		'titulo': 'Oruro',
+		'titulo': 'Surinam',
 		'datos': [
 			['dato1','imgurl'],
 			['dato2','imgurl']
 				]
 		},
 	'3': {
-		'titulo': 'Potosi',
+		'titulo': 'Guyana',
 		'datos': [
 			['dato1','imgurl'],
 			['dato2','imgurl']
 				]
 		},
 	'4': {
-		'titulo': 'Tarija',
+		'titulo': 'Venezuela',
 		'datos': [
 			['dato1','imgurl'],
 			['dato2','imgurl']
 				]
 		},
 	'5': {
-		'titulo': 'Chuquisaca',
+		'titulo': 'Colombia',
 		'datos': [
 			['dato1','imgurl'],
 			['dato2','imgurl']
 				]
 		},
 	'6': {
-		'titulo': 'Cochabamba',
+		'titulo': 'Ecuador',
 		'datos': [
 			['dato1','imgurl'],
 			['dato2','imgurl']
 				]
 		},
 	'7': {
-		'titulo': 'Beni',
+		'titulo': 'Peru',
 		'datos': [
 			['dato1','imgurl'],
 			['dato2','imgurl']
 				]
 		},
 	'8': {
-		'titulo': 'Santa Cruz',
+		'titulo': 'Brasil',
 		'datos': [
 			['dato1','imgurl'],
 			['dato2','imgurl']
 				]
 		},
 	'9': {
-		'titulo': 'Pando',
+		'titulo': 'Bolivia',
+		'datos': [
+			['dato1','imgurl'],
+			['dato2','imgurl']
+				]
+		},
+	'10': {
+		'titulo': 'Paraguay',
+		'datos': [
+			['dato1','imgurl'],
+			['dato2','imgurl']
+				]
+		},
+	'11': {
+		'titulo': 'Uruguay',
+		'datos': [
+			['dato1','imgurl'],
+			['dato2','imgurl']
+				]
+		},
+	'12': {
+		'titulo': 'Argentina',
+		'datos': [
+			['dato1','imgurl'],
+			['dato2','imgurl']
+				]
+		},
+	'13': {
+		'titulo': 'Chile',
 		'datos': [
 			['dato1','imgurl'],
 			['dato2','imgurl']
@@ -77,9 +105,9 @@ var acumulado = 0
 
 func _ready():
 	#Posición y tamaño de la imágen.
-	var fondo = get_node("Fondo").get_rect()
+	var fondo = get_node("fondo").get_rect()
 	#Tamaño de la imágen.
-	var dimensiones = fondo.size * get_node("Fondo").scale
+	var dimensiones = fondo.size * get_node("fondo").scale
 	#Tamaño de un cuadrado.
 	var pieza_dimension = dimensiones / piezas
 	#Centro de un cuadrado.
@@ -145,11 +173,9 @@ func mostrarDialog(depto):
 	titulo.text = data[depto]['titulo']
 	var nroDato = randi() % len(data[depto]['datos'])
 	descripcion.text = data[depto]['datos'][nroDato][0]
-	#imagen = data[depto]['datos'][nroDato][1]
-
 	var textura = load("res://src/img/fondo.png")
 	pieza.get_node("BodyNinePatchRect/ImgRef").set_texture(textura)
-
+	
 	
 	#para que se muestre sobre todo
 	get_parent().add_child(pieza)

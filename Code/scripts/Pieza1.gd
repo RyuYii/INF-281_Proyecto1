@@ -1,10 +1,11 @@
 extends Node2D
+export var ruta = ''#"res://src/img/"
 
 var mi_pos = Vector2()
 
 func _ready():
 	#Textura.
-	var textura = load("res://src/img/" + get_name() + ".png")
+	var textura = load(ruta + get_name() + ".png")
 	#Ponemos la textura en el nodo.
 	get_node("TextureRect").set_texture(textura)
 	var ancho_alto = textura.get_size()
