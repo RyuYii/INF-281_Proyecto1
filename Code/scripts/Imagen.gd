@@ -135,19 +135,6 @@ func _desencaja(_nodo):
 	esta_dentro = false
 
 func mostrarDialog(depto):
-	#format [[name,[datos,...]],...]
-	#data
-#	var data = [
-#		['La Paz',['DES1','DES2']],
-#		['Oruro',['DES1','DES2']],
-#		['Potosi',['DES1','DES2']],
-#		['Tarija',['DES1','DES2']],
-#		['Chuquisaca',['DES1','DES2']],
-#		['Cochabamba',['DES1','DES2']],
-#		['Beni',['DES1','DES2']],
-#		['Santa Cruz',['DES1','DES2']],
-#		['Pando',['DES1','DES2']]
-#		]
 	
 	var pieza = preload("res://scenes/Dialog_box.tscn").instance()
 

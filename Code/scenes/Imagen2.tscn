@@ -27,9 +27,9 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Node2D" type="Node2D" parent="."]
+[node name="Mascaras" type="Node2D" parent="."]
 
-[node name="mascara1" type="Sprite" parent="Node2D"]
+[node name="mascara1" type="Sprite" parent="Mascaras"]
 position = Vector2( 479.03, 166.546 )
 scale = Vector2( 0.25, 0.25 )
 texture = ExtResource( 10 )
@@ -38,9 +38,9 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Area2D" parent="Node2D/mascara1" instance=ExtResource( 15 )]
+[node name="Area2D" parent="Mascaras/mascara1" instance=ExtResource( 15 )]
 
-[node name="mascara2" type="Sprite" parent="Node2D"]
+[node name="mascara2" type="Sprite" parent="Mascaras"]
 position = Vector2( 444.821, 163.767 )
 scale = Vector2( 0.238, 0.238 )
 texture = ExtResource( 3 )
@@ -49,9 +49,9 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Area2D" parent="Node2D/mascara2" instance=ExtResource( 15 )]
+[node name="Area2D" parent="Mascaras/mascara2" instance=ExtResource( 15 )]
 
-[node name="mascara3" type="Sprite" parent="Node2D"]
+[node name="mascara3" type="Sprite" parent="Mascaras"]
 position = Vector2( 412.219, 155.215 )
 scale = Vector2( 0.25, 0.25 )
 texture = ExtResource( 8 )
@@ -60,9 +60,9 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Area2D" parent="Node2D/mascara3" instance=ExtResource( 15 )]
+[node name="Area2D" parent="Mascaras/mascara3" instance=ExtResource( 15 )]
 
-[node name="mascara4" type="Sprite" parent="Node2D"]
+[node name="mascara4" type="Sprite" parent="Mascaras"]
 position = Vector2( 334.533, 134.129 )
 scale = Vector2( 0.285, 0.285 )
 texture = ExtResource( 9 )
@@ -71,9 +71,9 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Area2D" parent="Node2D/mascara4" instance=ExtResource( 15 )]
+[node name="Area2D" parent="Mascaras/mascara4" instance=ExtResource( 15 )]
 
-[node name="mascara5" type="Sprite" parent="Node2D"]
+[node name="mascara5" type="Sprite" parent="Mascaras"]
 position = Vector2( 257.655, 156.976 )
 scale = Vector2( 0.338, 0.338 )
 texture = ExtResource( 2 )
@@ -82,9 +82,9 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Area2D" parent="Node2D/mascara5" instance=ExtResource( 15 )]
+[node name="Area2D" parent="Mascaras/mascara5" instance=ExtResource( 15 )]
 
-[node name="mascara6" type="Sprite" parent="Node2D"]
+[node name="mascara6" type="Sprite" parent="Mascaras"]
 position = Vector2( 199.111, 221.954 )
 scale = Vector2( 0.25, 0.25 )
 texture = ExtResource( 6 )
@@ -93,9 +93,9 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Area2D" parent="Node2D/mascara6" instance=ExtResource( 15 )]
+[node name="Area2D" parent="Mascaras/mascara6" instance=ExtResource( 15 )]
 
-[node name="mascara7" type="Sprite" parent="Node2D"]
+[node name="mascara7" type="Sprite" parent="Mascaras"]
 position = Vector2( 240.366, 295.686 )
 scale = Vector2( 0.345, 0.345 )
 texture = ExtResource( 5 )
@@ -104,9 +104,9 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Area2D" parent="Node2D/mascara7" instance=ExtResource( 15 )]
+[node name="Area2D" parent="Mascaras/mascara7" instance=ExtResource( 15 )]
 
-[node name="mascara8" type="Sprite" parent="Node2D"]
+[node name="mascara8" type="Sprite" parent="Mascaras"]
 position = Vector2( 451.259, 347.348 )
 scale = Vector2( 0.666507, 0.667217 )
 texture = ExtResource( 4 )
@@ -115,9 +115,9 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Area2D" parent="Node2D/mascara8" instance=ExtResource( 15 )]
+[node name="Area2D" parent="Mascaras/mascara8" instance=ExtResource( 15 )]
 
-[node name="mascara9" type="Sprite" parent="Node2D"]
+[node name="mascara9" type="Sprite" parent="Mascaras"]
 position = Vector2( 347.066, 366.112 )
 scale = Vector2( 0.265, 0.265 )
 texture = ExtResource( 1 )
@@ -126,9 +126,9 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Area2D" parent="Node2D/mascara9" instance=ExtResource( 15 )]
+[node name="Area2D" parent="Mascaras/mascara9" instance=ExtResource( 15 )]
 
-[node name="mascara10" type="Sprite" parent="Node2D"]
+[node name="mascara10" type="Sprite" parent="Mascaras"]
 position = Vector2( 410.232, 435.221 )
 scale = Vector2( 0.25, 0.25 )
 texture = ExtResource( 11 )
@@ -137,9 +137,9 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Area2D" parent="Node2D/mascara10" instance=ExtResource( 15 )]
+[node name="Area2D" parent="Mascaras/mascara10" instance=ExtResource( 15 )]
 
-[node name="mascara11" type="Sprite" parent="Node2D"]
+[node name="mascara11" type="Sprite" parent="Mascaras"]
 position = Vector2( 425.441, 533.869 )
 scale = Vector2( 0.165, 0.165 )
 texture = ExtResource( 14 )
@@ -148,9 +148,9 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Area2D" parent="Node2D/mascara11" instance=ExtResource( 15 )]
+[node name="Area2D" parent="Mascaras/mascara11" instance=ExtResource( 15 )]
 
-[node name="mascara12" type="Sprite" parent="Node2D"]
+[node name="mascara12" type="Sprite" parent="Mascaras"]
 position = Vector2( 361.177, 571.794 )
 scale = Vector2( 0.44, 0.44 )
 texture = ExtResource( 13 )
@@ -159,9 +159,9 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Area2D" parent="Node2D/mascara12" instance=ExtResource( 15 )]
+[node name="Area2D" parent="Mascaras/mascara12" instance=ExtResource( 15 )]
 
-[node name="mascara13" type="Sprite" parent="Node2D"]
+[node name="mascara13" type="Sprite" parent="Mascaras"]
 position = Vector2( 297.75, 566.918 )
 scale = Vector2( 0.51, 0.51 )
 texture = ExtResource( 12 )
@@ -170,4 +170,4 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Area2D" parent="Node2D/mascara13" instance=ExtResource( 15 )]
+[node name="Area2D" parent="Mascaras/mascara13" instance=ExtResource( 15 )]

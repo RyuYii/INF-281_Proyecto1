@@ -1,9 +1,11 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://scenes/Imagen2.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/img/background.jpg" type="Texture" id=2]
+[ext_resource path="res://scripts/Mesa2.gd" type="Script" id=3]
 
 [node name="Mesa2" type="Node2D"]
+script = ExtResource( 3 )
 
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( 640.469, 411.475 )
