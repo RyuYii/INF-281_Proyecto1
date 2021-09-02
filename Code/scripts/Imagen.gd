@@ -4,15 +4,19 @@ var data = {
 	'1': {
 		'titulo': 'La Paz',
 		'datos': [
-			['dato1','imgurl'],
-			['dato2','imgurl']
+			['Comida típica el plato paceño, es un plato que combina choclo, papa, habas y queso y que se acompaña con salsa picante (llajua).',
+				"res://src/img/data/LP1.png"],
+				['Mi Teleférico, oficialmente Empresa Estatal de Transporte por Cable Mi Teleférico, es la empresa estatal encargada de la administración del sistema de transporte por Cable urbano Teleférico La Paz',
+				"res://src/img/data/LP2.png"]
 				]
 		},
 	'2': {
 		'titulo': 'Oruro',
 		'datos': [
-			['dato1','imgurl'],
-			['dato2','imgurl']
+			['La Virgen del Socavón es una advocación de la Virgen María que se venera en la ciudad de Oruro, Bolivia. Es la patrona de los mineros',
+				"res://src/img/data/OR1.png"],
+			['El Carnaval de Oruro es un evento folclórico y cultural en la ciudad de Oruro, así como la máxima representación de los carnavales en Bolivia',
+				"res://src/img/data/OR2.png"]
 				]
 		},
 	'3': {
@@ -147,7 +151,7 @@ func mostrarDialog(depto):
 	descripcion.text = data[depto]['datos'][nroDato][0]
 	#imagen = data[depto]['datos'][nroDato][1]
 
-	var textura = load("res://src/img/fondo.png")
+	var textura = load(data[depto]['datos'][nroDato][1])
 	pieza.get_node("BodyNinePatchRect/ImgRef").set_texture(textura)
 
 	
