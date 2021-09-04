@@ -1,6 +1,8 @@
 extends Node2D
 
 #Total de piezas que tiene el rompecabezas.
+export var box = false
+var puntuacion = 0
 var numero_piezas = 9
 var escalas = [
 	0,

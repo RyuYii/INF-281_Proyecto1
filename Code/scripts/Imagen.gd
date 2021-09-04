@@ -157,10 +157,19 @@ func mostrarDialog(depto):
 	
 	#para que se muestre sobre todo
 	get_parent().add_child(pieza)
-	
+	get_parent().box = true
 	#centramos
 	var lugar = Vector2(640,410)
 	pieza.set_global_position(lugar)
+	
+func mostrar_test():
+	if not get_parent().box:
+		acumulado = 0
+		var test = preload("res://scenes/TestCard.tscn").instance()
+		test.get_node("NinePatchRect/opt1/img").set_texture(load("res://src/img/pieza1.png"))
+		get_parent().add_child(test)
+		var lugar = Vector2(640,410)
+		test.set_global_position(lugar)
 	
 func _physics_process(_delta):
 	#Si la pieza correcta esta en la casilla.
@@ -179,6 +188,6 @@ func _physics_process(_delta):
 	if acumulado == piezas.x * piezas.y:
 		#Si ponemos todas las piezas: cambiamos de escena.
 		# warning-ignore:return_value_discarded
-		print('Victoryyyyyy!!!!!!!!!')
+		mostrar_test()
 		#get_tree().change_scene("res://Inicio.tscn")
 	
