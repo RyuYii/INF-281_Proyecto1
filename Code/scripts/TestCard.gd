@@ -15,14 +15,17 @@ func _ready():
 func _process(delta):
 	pass
 
-
+#este objeto solo devolvera la opcion seleccionada
 func _on_opt1_pressed():
-	print(get_tree().get_name())
+	get_parent().resultado('1')
+	queue_free()
 
 
 func _on_opt2_pressed():
-	print(get_name())
+	get_parent().resultado('2')
+	queue_free()
 
 
 func _on_opt3_pressed():
-	print(get_name())
+	get_parent().resultado('3')
+	queue_free()

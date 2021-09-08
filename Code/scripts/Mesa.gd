@@ -16,6 +16,9 @@ var escalas = [
 	[0.60,0.60],
 	[0.72,0.73]
 ]
+func resultado(opcion):
+	get_node("Imagen").calcular_resultado(opcion)
+
 func _ready():
 	#Generamos aleatoridad.
 	randomize()

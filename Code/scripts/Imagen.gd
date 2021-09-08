@@ -4,72 +4,194 @@ var data = {
 	'1': {
 		'titulo': 'La Paz',
 		'datos': [
-			['Comida típica el plato paceño, es un plato que combina choclo, papa, habas y queso y que se acompaña con salsa picante (llajua).',
-				"res://src/img/data/LP1.png"],
-				['Mi Teleférico, oficialmente Empresa Estatal de Transporte por Cable Mi Teleférico, es la empresa estatal encargada de la administración del sistema de transporte por Cable urbano Teleférico La Paz',
-				"res://src/img/data/LP2.png"]
-				]
+			['Mi Teleférico, es una empresa Estatal de Transporte por Cable urbano del departamento de La Paz. Actualmente están en servicio 10 líneas.	',
+				"res://src/img/data/nivel1/LP1.png"],
+			['La bandera del departamento de La Paz está representado por dos franjas horizontales de dimensiones simétricas, compuesto por dos colores; Rojo Punzó y Verde Esmeralda.',
+				"res://src/img/data/nivel1/LP2.png"]
+				],
+		'preguntas':['¿Cuántas líneas de ‘Mi Teleférico’ están en servicio actualmente?',
+				'¿Qué bandera corresponde al departamento de La Paz?'],
+		'imagenes':[
+			[ 	"res://src/img/data/nivel1/1er_NIVEL_Eval/LP_preg1_1.png",
+				"res://src/img/data/nivel1/1er_NIVEL_Eval/LP_preg1_2.png",
+				"res://src/img/data/nivel1/1er_NIVEL_Eval/LP_preg1_3.png"],
+			[ 	"res://src/img/data/nivel1/1er_NIVEL_Eval/Banderas_de_ Bolivia/Bd_BE.png",
+				"res://src/img/data/nivel1/1er_NIVEL_Eval/Banderas_de_ Bolivia/Bd_OR.png",
+				"res://src/img/data/nivel1/1er_NIVEL_Eval/Banderas_de_ Bolivia/Bd_LP.png"]
+		],
+		'respuesta':['2','3']
 		},
 	'2': {
 		'titulo': 'Oruro',
 		'datos': [
-			['La Virgen del Socavón es una advocación de la Virgen María que se venera en la ciudad de Oruro, Bolivia. Es la patrona de los mineros',
-				"res://src/img/data/OR1.png"],
-			['El Carnaval de Oruro es un evento folclórico y cultural en la ciudad de Oruro, así como la máxima representación de los carnavales en Bolivia',
-				"res://src/img/data/OR2.png"]
-				]
+			['El Carnaval de Oruro es un evento folclórico y cultural en la ciudad de Oruro, así como la máxima representación de los carnavales en Bolivia, “Obra Maestra del Patrimonio Oral e Intangible de la Humanidad”',
+				"res://src/img/data/nivel1/OR1.png"],
+			['La bandera del departamento de Oruro tiene un color rojo carmesí, representa el amor, el coraje, la valentía y la sangre de los orureños que lucharon por la libertad y mejores días para sus hijos.',
+				"res://src/img/data/nivel1/OR2.png"]
+				],
+		'preguntas':['¿En qué departamento se llama al carnaval una “Obra Maestra del Patrimonio Oral e Intangible de la Humanidad”?',
+			'¿Qué bandera corresponde al departamento de Oruro?'],
+		'imagenes':[
+			[	"res://src/img/data/nivel1/1er_NIVEL_Eval/Presentacion_de_Departamentos/La_Paz.jpg",
+				"res://src/img/data/nivel1/1er_NIVEL_Eval/Presentacion_de_Departamentos/Oruro.jpg",
+				"res://src/img/data/nivel1/1er_NIVEL_Eval/Presentacion_de_Departamentos/Santa_Cruz.jpg"],
+			[	"res://src/img/data/nivel1/1er_NIVEL_Eval/Banderas_de_ Bolivia/Bd_OR.png",
+				"res://src/img/data/nivel1/1er_NIVEL_Eval/Banderas_de_ Bolivia/Bd_PT.png",
+				"res://src/img/data/nivel1/1er_NIVEL_Eval/Banderas_de_ Bolivia/Bd_CH.png"]
+		],
+		'respuesta':['2','1']
 		},
 	'3': {
 		'titulo': 'Potosi',
 		'datos': [
-			['dato1','imgurl'],
-			['dato2','imgurl']
-				]
+			['El salar de Uyuni es el mayor desierto de sal continuo y alto del mundo, con una superficie de 10.582 km².​ Está situado a unos 3.650 msnm en el suroeste de Bolivia, en la provincia de Daniel Campos, en el departamento de Potosí, dentro de la región altiplánica de la cordillera de los Andes.',
+				"res://src/img/data/nivel1/PT1.png"],
+			['La casa de la moneda. Es una entidad cultural del Estado, que tiene por finalidad rescatar, proteger, custodiar, conservar, restaurar, promover y poner en valor el Patrimonio Cultural tangible e intangible que se halla en el Repositorio, rescatando la historia y cultura de la Villa Imperial de Potosí.',
+				"res://src/img/data/nivel1/PT2.png"]
+				],
+		'preguntas':['¿En qué departamento se encuentra el salar de Uyuni?',
+			'¿En qué departamento se encuentra la Casa de la Moneda?'],
+		'imagenes':[
+			[	"res://src/img/data/nivel1/1er_NIVEL_Eval/Presentacion_de_Departamentos/Potosi.jpg",
+				"res://src/img/data/nivel1/1er_NIVEL_Eval/Presentacion_de_Departamentos/Chuquisaca.jpg",
+				"res://src/img/data/nivel1/1er_NIVEL_Eval/Presentacion_de_Departamentos/Oruro.jpg"],	
+			[	"res://src/img/data/nivel1/1er_NIVEL_Eval/Presentacion_de_Departamentos/Santa_Cruz.jpg",
+				"res://src/img/data/nivel1/1er_NIVEL_Eval/Presentacion_de_Departamentos/La_Paz.jpg",
+				"res://src/img/data/nivel1/1er_NIVEL_Eval/Presentacion_de_Departamentos/Potosi.jpg"]
+		],
+		'respuesta':['1','3']
 		},
 	'4': {
 		'titulo': 'Tarija',
 		'datos': [
-			['dato1','imgurl'],
-			['dato2','imgurl']
-				]
+			['El Saice Chapaco: es el plato más representativo de la culinaria tarijeña. Elaborado a base de carne picada, papa, arveja, cebolla, condimentos y ají colorado. Esta preparación se la acompaña con arroz y sarsa (ensalada de tomate y cebolla).',
+				"res://src/img/data/nivel1/TJ1.png"],
+			['El mirador tiene una forma de una copa de vino, este diseño simboliza la vocación del valle central de Tarija en la producción de uvas y singanis, además se asemeja a un cáliz eucarístico que tiene relación con la fe católica de los tarijeños.',
+				"res://src/img/data/nivel1/TJ2.png"]
+				],
+		'preguntas':['Plato típico del departamento de Tarija',
+			'¿En qué departamento se encuentra el mirador con forma de Copa de Vino?'],
+		'imagenes':[
+			[	"res://src/img/data/nivel1/TJ1.png",
+				"res://src/img/data/nivel1/SC2.png",
+				"res://src/img/data/nivel1/BE2.png"],
+			[	"res://src/img/data/nivel1/1er_NIVEL_Eval/Presentacion_de_Departamentos/Beni.jpg",
+				"res://src/img/data/nivel1/1er_NIVEL_Eval/Presentacion_de_Departamentos/La_Paz.jpg",
+				"res://src/img/data/nivel1/1er_NIVEL_Eval/Presentacion_de_Departamentos/Tarija.jpg"]
+		],
+		'respuesta':['1','3']
 		},
 	'5': {
 		'titulo': 'Chuquisaca',
 		'datos': [
-			['dato1','imgurl'],
-			['dato2','imgurl']
-				]
+			['El Pujllay es una danza típica del departamento de Chuquisaca, representa un juego o esparcimiento por la floración de los campos, donde la fiesta se inicia con la generalizada ch’alla de las sementeras y se realizan diversas ceremonias de fecundidad, esta celebración se realiza en Febrero o Marzo, y se caracteriza por su música y vestimenta típica correspondiente a la región Yamparaez.',
+				"res://src/img/data/nivel1/CH1.png"],
+			['El área que envuelve a Sucre es de gran importancia paleontológica. A sólo 5.5 km de la localidad de Chuquisaca se halla Cal Orcko, uno de los descubrimientos paleolíticos más significativos del mundo.',
+				"res://src/img/data/nivel1/CH2.png"]
+				],
+		'preguntas':['Danza tipica del departamento de Chuquisaca',
+			'¿En qué departamento se encuentra el Área de gran importancia paleontológica ‘Cal Orcko’?'],
+		'imagenes':[
+			[	"res://src/img/data/nivel1/1er_NIVEL_Eval/CH_danza1_1.png",
+				"res://src/img/data/nivel1/1er_NIVEL_Eval/CH_danza1_2.jpg",
+				"res://src/img/data/nivel1/1er_NIVEL_Eval/CH_danza1_3.jpg"],
+			[	"res://src/img/data/nivel1/1er_NIVEL_Eval/Presentacion_de_Departamentos/La_Paz.jpg",
+				"res://src/img/data/nivel1/1er_NIVEL_Eval/Presentacion_de_Departamentos/Pando.jpg",
+				"res://src/img/data/nivel1/1er_NIVEL_Eval/Presentacion_de_Departamentos/Chuquisaca.jpg"]
+		],
+		'respuesta':['1','3']
 		},
 	'6': {
 		'titulo': 'Cochabamba',
 		'datos': [
-			['dato1','imgurl'],
-			['dato2','imgurl']
-				]
+			['Cristo de la Concordia. Es la estatua de Jesucristo más grande del mundo, está situada a 2.840 metros sobre el nivel del mar, en la cima del Cerro San Pedro, en la ciudad de Cochabamba, Bolivia. Tiene una altura total de 40.5 metros y un peso de 2.400 toneladas.',
+				"res://src/img/data/nivel1/CB1.png"],
+			['Los orígenes de la bandera de Cochabamba datan de la memorable batalla de Aroma y la defensa de la Colina de Sebastián. Es color celeste claro que simboliza el ansia de libertad que anima al pueblo cochabambino. Este emblema fue sudario de las contiendas y de las valerosas mujeres cochabambinas que lucharon por la independencia Altoperuana.',
+				"res://src/img/data/nivel1/CB2.png"]
+				],
+		'preguntas':['¿En qué departamento se encuentra el Cristo de la Concordia?',
+			'¿Qué bandera corresponde al departamento de Cochabamba?'],
+		'imagenes':[
+			[	"res://src/img/data/nivel1/1er_NIVEL_Eval/Presentacion_de_Departamentos/Chuquisaca.jpg",
+				"res://src/img/data/nivel1/1er_NIVEL_Eval/Presentacion_de_Departamentos/Cochabamba.jpg",
+				"res://src/img/data/nivel1/1er_NIVEL_Eval/Presentacion_de_Departamentos/Oruro.jpg"],
+			[	"res://src/img/data/nivel1/1er_NIVEL_Eval/Banderas_de_ Bolivia/Bd_BE.png",
+				"res://src/img/data/nivel1/1er_NIVEL_Eval/Banderas_de_ Bolivia/Bd_OR.png",
+				"res://src/img/data/nivel1/1er_NIVEL_Eval/Banderas_de_ Bolivia/Bd_CB.png"]
+		],
+		'respuesta':['2','3']
 		},
 	'7': {
 		'titulo': 'Beni',
 		'datos': [
-			['dato1','imgurl'],
-			['dato2','imgurl']
-				]
+			['El Parque Nacional y Área Natural de Manejo Integrado Madidi es un destino de incomparable belleza natural donde 3.235 especies conviven en perfecta armonía con el ser humano.',
+				"res://src/img/data/nivel1/BE1.png"],
+			['Desayuno típico de Beni. Masaco Beniano, tiene plátano semimaduro, charque de res, queso y chicharrón de cuero de cerdo.',
+				"res://src/img/data/nivel1/BE2.png"]
+				],
+		'preguntas':['¿En qué departamento se encuentra el Parque Nacional Madidi?',
+			'Plato típico del departamento de Beni'],
+		'imagenes':[
+			[	"res://src/img/data/nivel1/1er_NIVEL_Eval/Presentacion_de_Departamentos/Beni.jpg",
+				"res://src/img/data/nivel1/1er_NIVEL_Eval/Presentacion_de_Departamentos/Pando.jpg",
+				"res://src/img/data/nivel1/1er_NIVEL_Eval/Presentacion_de_Departamentos/Tarija.jpg"],
+			[	"res://src/img/data/nivel1/BE2.png",
+				"res://src/img/data/nivel1/SC2.png",
+				"res://src/img/data/nivel1/TJ1.png"]
+		],
+		'respuesta':['1','1']
 		},
 	'8': {
 		'titulo': 'Santa Cruz',
 		'datos': [
-			['dato1','imgurl'],
-			['dato2','imgurl']
-				]
+			['La bandera del departamento de Santa Cruz. Está constituida por tres franjas horizontales del mismo ancho: verde en la parte superior e inferior, y blanca en el centro.',
+				"res://src/img/data/nivel1/SC1.png"],
+			['El majadito es un plato típico del departamento de Santa Cruz está preparado a base de arroz con charque, huevo, yuca y plátanos fritos. Existen dos variedades de majadito: el majadito tostado y el majadito batido.',
+				"res://src/img/data/nivel1/SC2.png"]
+				],
+		'preguntas':['¿Qué bandera corresponde al departamento de Santa Cruz?',
+			'Plato típico del departamento de Santa Cruz'],
+		'imagenes':[
+			[	"res://src/img/data/nivel1/1er_NIVEL_Eval/Banderas_de_ Bolivia/Bd_SC.png",
+				"res://src/img/data/nivel1/1er_NIVEL_Eval/Banderas_de_ Bolivia/Bd_BE.png",
+				"res://src/img/data/nivel1/1er_NIVEL_Eval/Banderas_de_ Bolivia/Bd_PD.png"],
+			[	"res://src/img/data/nivel1/TJ1.png",
+				"res://src/img/data/nivel1/SC2.png",
+				"res://src/img/data/nivel1/BE2.png"]
+		],
+		'respuesta':['1','2']
 		},
 	'9': {
 		'titulo': 'Pando',
 		'datos': [
-			['dato1','imgurl'],
-			['dato2','imgurl']
-				]
+			['La bandera del departamento de Pando es bicolor con dos franjas del mismo en la parte superior es blanco y en la inferior es verde esmeralda.',
+				"res://src/img/data/nivel1/PD1.png"],
+			['El monumento a los Héroes de Bahía de Tres Cabezas se encuentra en la capital de Pando, Cobija. Este monumento hace honor a la Columna Porvenir, un grupo de empresarios caucheros formado por caucheros y campesinos bolivianos. Las tres cabezas pertenecen a Nicolás Suárez, Bruno Racua y José Manuel Pando.',
+				"res://src/img/data/nivel1/PD2.png"]
+				],
+		'preguntas':['¿Qué bandera corresponde al departamento de Pando?',
+			'¿En qué departamento se encuentra el monumento a los Héroes de Bahía o de Tres Cabezas?'],
+		'imagenes':[
+			[	"res://src/img/data/nivel1/1er_NIVEL_Eval/Banderas_de_ Bolivia/Bd_PD.png",
+				"res://src/img/data/nivel1/1er_NIVEL_Eval/Banderas_de_ Bolivia/Bd_PT.png",
+				"res://src/img/data/nivel1/1er_NIVEL_Eval/Banderas_de_ Bolivia/Bd_CH.png"],
+			[	"res://src/img/data/nivel1/1er_NIVEL_Eval/Presentacion_de_Departamentos/Cochabamba.jpg",
+				"res://src/img/data/nivel1/1er_NIVEL_Eval/Presentacion_de_Departamentos/La_Paz.jpg",
+				"res://src/img/data/nivel1/1er_NIVEL_Eval/Presentacion_de_Departamentos/Pando.jpg"]
+		],
+		'respuesta':['1','3']
 		}
 	}
-
+onready var timer = get_node("Timer")	
+export var mostrar = true
+#conjunto de pares de datos, depto, nroCuriosidad
+var evaluacion = []
+#respuestas solicitadas
+var respuestas = []
+#preguntas usadas
+var mostradas = []
+#posible nota
+var nota_nivel = 0
 #Cuantas piezas tienes de ancho y de alto.
 var piezas = Vector2(3, 3)
 #Cuanto mide una colisión.
@@ -78,8 +200,11 @@ var colision = Vector2(20, 20)
 var esta_dentro = false
 var pza
 var acumulado = 0
+export var counter = 1
 
 func _ready():
+	#el tiempo para mostrar el resultado
+	timer.set_wait_time(2)
 	#Posición y tamaño de la imágen.
 	var fondo = get_node("Fondo").get_rect()
 	#Tamaño de la imágen.
@@ -94,7 +219,7 @@ func _ready():
 	var salto_abajo = pieza_dimension.y
 	#Lista de con la posición del centro de cada cuadrado.
 	var lugar = []
-	
+	mostrar = true
 	var derecha_abajo = Vector2(col_pos_ini.x, col_pos_ini.y)
 	
 	# warning-ignore:unused_variable
@@ -148,13 +273,15 @@ func mostrarDialog(depto):
 #	
 	titulo.text = data[depto]['titulo']
 	var nroDato = randi() % len(data[depto]['datos'])
+	#carga la info segun la variable data
 	descripcion.text = data[depto]['datos'][nroDato][0]
-	#imagen = data[depto]['datos'][nroDato][1]
-
 	var textura = load(data[depto]['datos'][nroDato][1])
+	
+	var question = [depto,nroDato]
+	evaluacion.append(question)
+	
 	pieza.get_node("BodyNinePatchRect/ImgRef").set_texture(textura)
 
-	
 	#para que se muestre sobre todo
 	get_parent().add_child(pieza)
 	get_parent().box = true
@@ -164,12 +291,53 @@ func mostrarDialog(depto):
 	
 func mostrar_test():
 	if not get_parent().box:
-		acumulado = 0
+		#----------------------------------------------------------
+		var nroQ = randi() % 9 #solucionar el caso en que repita la pregunta
+		#while nroQ in mostradas:
+		#	nroQ = randi() % 9
+		#----------------------------------------------------------
+		#obtenemos la pregunta que se relaciona con la curiosidad mostrada
+		var Q = evaluacion[nroQ-1]
+		#guardamos la respuesta
+		respuestas.append(data[Q[0]]['respuesta'][Q[1]])
+		#pass
 		var test = preload("res://scenes/TestCard.tscn").instance()
-		test.get_node("NinePatchRect/opt1/img").set_texture(load("res://src/img/pieza1.png"))
+		#pregunta
+		test.get_node("NinePatchRect/MarginContainer/Question").text = data[Q[0]]['preguntas'][Q[1]]
+		#opcion1
+		test.get_node("NinePatchRect/opt1/img").set_texture(load(data[Q[0]]['imagenes'][Q[1]][0]))
+		#opcion2
+		test.get_node("NinePatchRect/opt2/img").set_texture(load(data[Q[0]]['imagenes'][Q[1]][1]))
+		#opcion3
+		test.get_node("NinePatchRect/opt3/img").set_texture(load(data[Q[0]]['imagenes'][Q[1]][2]))
+		print('mostrando test')
 		get_parent().add_child(test)
 		var lugar = Vector2(640,410)
-		test.set_global_position(lugar)
+		test.set_global_position(lugar)	
+		counter+=1
+	else:
+		print('entro aqui')
+		mostrar = true	
+
+func calcular_resultado(opcion):
+	print('resultado calculado')
+	print(opcion)
+	print(respuestas)
+	var elemento = respuestas[-1]
+	var test = preload("res://scenes/evaluacion/Resultado.tscn").instance()
+	if opcion == elemento:
+		print('correcto')
+		get_parent().add_child(test)
+		#var lugar = Vector2(640,410)
+		#test.set_global_position(lugar)	
+	else:
+		print('incorrecto')
+		test.get_node("Sprite").texture = load("res://src/img/evaluacion/mal.png")
+		get_parent().add_child(test)
+		#var lugar = Vector2(640,410)
+		#test.set_global_position(lugar)
+	timer.start()
+
 	
 func _physics_process(_delta):
 	#Si la pieza correcta esta en la casilla.
@@ -186,8 +354,18 @@ func _physics_process(_delta):
 			mostrarDialog(n_pza)
 			
 	if acumulado == piezas.x * piezas.y:
+		
 		#Si ponemos todas las piezas: cambiamos de escena.
 		# warning-ignore:return_value_discarded
-		mostrar_test()
+		if mostrar:
+			mostrar = false
+			mostrar_test()
 		#get_tree().change_scene("res://Inicio.tscn")
 	
+
+
+func _on_Timer_timeout():
+	if counter == 4:
+		mostrar = false
+	else:
+		mostrar = true

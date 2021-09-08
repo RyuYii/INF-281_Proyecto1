@@ -1,14 +1,14 @@
 [gd_scene load_steps=13 format=2]
 
-[ext_resource path="res://src/img/Image1/mascara9.png" type="Texture" id=1]
-[ext_resource path="res://src/img/Image1/mascara7.png" type="Texture" id=2]
-[ext_resource path="res://src/img/Image1/mascara8.png" type="Texture" id=3]
-[ext_resource path="res://src/img/Image1/mascara6.png" type="Texture" id=4]
-[ext_resource path="res://src/img/Image1/mascara4.png" type="Texture" id=5]
-[ext_resource path="res://src/img/Image1/mascara3.png" type="Texture" id=6]
-[ext_resource path="res://src/img/Image1/mascara5.png" type="Texture" id=7]
-[ext_resource path="res://src/img/Image1/mascara1.png" type="Texture" id=8]
-[ext_resource path="res://src/img/Image1/mascara2.png" type="Texture" id=9]
+[ext_resource path="res://src/img/mascara5.png" type="Texture" id=1]
+[ext_resource path="res://src/img/mascara4.png" type="Texture" id=2]
+[ext_resource path="res://src/img/mascara9.png" type="Texture" id=3]
+[ext_resource path="res://src/img/mascara8.png" type="Texture" id=4]
+[ext_resource path="res://src/img/mascara7.png" type="Texture" id=5]
+[ext_resource path="res://src/img/mascara6.png" type="Texture" id=6]
+[ext_resource path="res://src/img/mascara2.png" type="Texture" id=7]
+[ext_resource path="res://src/img/mascara3.png" type="Texture" id=8]
+[ext_resource path="res://src/img/mascara1.png" type="Texture" id=9]
 [ext_resource path="res://src/img/fondo.png" type="Texture" id=10]
 [ext_resource path="res://scripts/Imagen.gd" type="Script" id=11]
 [ext_resource path="res://scenes/Area2D.tscn" type="PackedScene" id=12]
@@ -32,7 +32,10 @@ __meta__ = {
 [node name="mascara1" type="Sprite" parent="Mascaras"]
 position = Vector2( 241.614, 301.861 )
 scale = Vector2( 0.340726, 0.350569 )
-texture = ExtResource( 8 )
+texture = ExtResource( 9 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="Area2D" parent="Mascaras/mascara1" instance=ExtResource( 12 )]
 position = Vector2( -0.364624, 0.16803 )
@@ -40,7 +43,7 @@ position = Vector2( -0.364624, 0.16803 )
 [node name="mascara2" type="Sprite" parent="Mascaras"]
 position = Vector2( 255.725, 481.31 )
 scale = Vector2( 0.260979, 0.250597 )
-texture = ExtResource( 9 )
+texture = ExtResource( 7 )
 __meta__ = {
 "_edit_lock_": true
 }
@@ -50,7 +53,7 @@ __meta__ = {
 [node name="mascara3" type="Sprite" parent="Mascaras"]
 position = Vector2( 303.24, 574.425 )
 scale = Vector2( 0.349789, 0.346495 )
-texture = ExtResource( 6 )
+texture = ExtResource( 8 )
 __meta__ = {
 "_edit_lock_": true
 }
@@ -60,7 +63,7 @@ __meta__ = {
 [node name="mascara4" type="Sprite" parent="Mascaras"]
 position = Vector2( 438.607, 633.313 )
 scale = Vector2( 0.209913, 0.206804 )
-texture = ExtResource( 5 )
+texture = ExtResource( 2 )
 __meta__ = {
 "_edit_lock_": true
 }
@@ -70,7 +73,7 @@ __meta__ = {
 [node name="mascara5" type="Sprite" parent="Mascaras"]
 position = Vector2( 420.045, 547.344 )
 scale = Vector2( 0.256114, 0.255744 )
-texture = ExtResource( 7 )
+texture = ExtResource( 1 )
 __meta__ = {
 "_edit_lock_": true
 }
@@ -81,7 +84,7 @@ position = Vector2( 0, 5.23901 )
 [node name="mascara6" type="Sprite" parent="Mascaras"]
 position = Vector2( 345.48, 409.909 )
 scale = Vector2( 0.225548, 0.224165 )
-texture = ExtResource( 4 )
+texture = ExtResource( 6 )
 __meta__ = {
 "_edit_lock_": true
 }
@@ -91,7 +94,7 @@ __meta__ = {
 [node name="mascara7" type="Sprite" parent="Mascaras"]
 position = Vector2( 376.779, 215.585 )
 scale = Vector2( 0.412388, 0.413165 )
-texture = ExtResource( 2 )
+texture = ExtResource( 5 )
 __meta__ = {
 "_edit_lock_": true
 }
@@ -101,7 +104,7 @@ __meta__ = {
 [node name="mascara8" type="Sprite" parent="Mascaras"]
 position = Vector2( 544.715, 407.044 )
 scale = Vector2( 0.40409, 0.40218 )
-texture = ExtResource( 3 )
+texture = ExtResource( 4 )
 __meta__ = {
 "_edit_lock_": true
 }
@@ -111,13 +114,10 @@ __meta__ = {
 [node name="mascara9" type="Sprite" parent="Mascaras"]
 position = Vector2( 262.251, 108.186 )
 scale = Vector2( 0.276609, 0.282789 )
-texture = ExtResource( 1 )
+texture = ExtResource( 3 )
 __meta__ = {
 "_edit_lock_": true
 }
 
 [node name="Area2D" parent="Mascaras/mascara9" instance=ExtResource( 12 )]
 position = Vector2( 0, -1.45407 )
-
-[node name="Timer" type="Timer" parent="."]
-[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

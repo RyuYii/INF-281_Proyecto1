@@ -1,12 +1,17 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://src/img/borders/box.jpg" type="Texture" id=1]
 [ext_resource path="res://src/img/background.jpg" type="Texture" id=2]
 [ext_resource path="res://scripts/TestCard.gd" type="Script" id=3]
+[ext_resource path="res://scenes/BodyAnimationPlayer.tscn" type="PackedScene" id=4]
+
+[sub_resource type="GradientTexture" id=1]
 
 [node name="TestCard" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_top = 0.840881
+margin_bottom = 0.840881
 script = ExtResource( 3 )
 __meta__ = {
 "_edit_group_": true,
@@ -31,16 +36,28 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Question" type="Label" parent="NinePatchRect"]
-margin_left = 140.44
-margin_top = 78.2202
-margin_right = 1002.44
-margin_bottom = 218.22
-custom_colors/font_color = Color( 0, 0, 0, 1 )
-text = "texto"
+[node name="MarginContainer" type="MarginContainer" parent="NinePatchRect"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -481.0
+margin_top = 72.0
+margin_right = 483.0
+margin_bottom = 234.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Question" type="Label" parent="NinePatchRect/MarginContainer"]
+margin_right = 964.0
+margin_bottom = 162.0
+size_flags_vertical = 5
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "aqui va la pregunta"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BodyAnimationPlayer" parent="NinePatchRect/MarginContainer/Question" instance=ExtResource( 4 )]
 
 [node name="opt1" type="TextureButton" parent="NinePatchRect"]
 margin_left = 68.4217
@@ -49,14 +66,13 @@ margin_right = 393.422
 margin_bottom = 490.55
 __meta__ = {
 "_edit_group_": true,
-"_edit_lock_": true,
 "_edit_use_anchors_": false
 }
 
 [node name="img" type="NinePatchRect" parent="NinePatchRect/opt1"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-texture = ExtResource( 2 )
+texture = SubResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -68,7 +84,6 @@ margin_right = 730.065
 margin_bottom = 490.546
 __meta__ = {
 "_edit_group_": true,
-"_edit_lock_": true,
 "_edit_use_anchors_": false
 }
 
@@ -87,7 +102,6 @@ margin_right = 1067.35
 margin_bottom = 491.182
 __meta__ = {
 "_edit_group_": true,
-"_edit_lock_": true,
 "_edit_use_anchors_": false
 }
 

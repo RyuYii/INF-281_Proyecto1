@@ -1,8 +1,11 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=14 format=2]
 
-[ext_resource path="res://src/img/background.jpg" type="Texture" id=1]
+[ext_resource path="res://src/img/borders/title.png" type="Texture" id=1]
 [ext_resource path="res://scripts/Dialog_box.gd" type="Script" id=2]
 [ext_resource path="res://src/img/personaje.jpg" type="Texture" id=3]
+[ext_resource path="res://scenes/BodyAnimationPlayer.tscn" type="PackedScene" id=4]
+[ext_resource path="res://src/img/borders/box2.jpg" type="Texture" id=5]
+[ext_resource path="res://src/img/borders/button.png" type="Texture" id=6]
 
 [sub_resource type="DynamicFontData" id=1]
 font_path = "res://src/fonts/Summer Calling/Summer Calling.ttf"
@@ -12,22 +15,6 @@ extra_spacing_top = 2
 extra_spacing_char = 2
 extra_spacing_space = 1
 font_data = SubResource( 1 )
-
-[sub_resource type="Animation" id=3]
-resource_name = "TextDisplay"
-length = 2.0
-tracks/0/type = "value"
-tracks/0/path = NodePath(".:percent_visible")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 1, 2 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
-"update": 0,
-"values": [ 0.0, 0.5, 1.0 ]
-}
 
 [sub_resource type="DynamicFontData" id=4]
 font_path = "res://src/fonts/Summer Calling/Summer Calling.ttf"
@@ -104,20 +91,18 @@ margin_bottom = 284.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Aqui ira el texto con los datos curiosos de los deptos xD Para mas informacion dale like..."
 autowrap = true
-percent_visible = 0.0
 
-[node name="BodyAnimationPlayer" type="AnimationPlayer" parent="BodyNinePatchRect/MarginContainer/BodyLabel"]
-autoplay = "TextDisplay"
-anims/TextDisplay = SubResource( 3 )
+[node name="BodyAnimationPlayer" parent="BodyNinePatchRect/MarginContainer/BodyLabel" instance=ExtResource( 4 )]
 
 [node name="SpeakerNinePatchRect" type="NinePatchRect" parent="BodyNinePatchRect"]
-margin_left = -22.1784
-margin_top = -16.8216
-margin_right = 255.822
-margin_bottom = 62.1784
-texture = ExtResource( 1 )
+margin_left = -88.0
+margin_top = -30.0
+margin_right = 256.0
+margin_bottom = 62.0
+texture = ExtResource( 5 )
 patch_margin_left = 5
 patch_margin_top = 5
 patch_margin_right = 5
@@ -130,6 +115,7 @@ __meta__ = {
 anchor_right = 1.0
 anchor_bottom = 1.0
 custom_fonts/font = SubResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Speaker"
 align = 1
 valign = 1
@@ -142,7 +128,7 @@ margin_left = 525.017
 margin_top = 434.151
 margin_right = 840.017
 margin_bottom = 521.151
-texture = ExtResource( 1 )
+texture = ExtResource( 6 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -179,10 +165,10 @@ __meta__ = {
 [node name="ImgRef" type="NinePatchRect" parent="BodyNinePatchRect"]
 anchor_top = 1.0
 anchor_bottom = 1.0
-margin_left = -46.0
-margin_top = -380.0
-margin_right = 240.0
-margin_bottom = -131.0
+margin_left = -79.0
+margin_top = -383.0
+margin_right = 238.0
+margin_bottom = -97.0
 texture = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
