@@ -183,7 +183,7 @@ var data = {
 		}
 	}
 onready var timer = get_node("Timer")	
-export var mostrar = true
+var mostrar
 #conjunto de pares de datos, depto, nroCuriosidad
 var evaluacion = []
 #respuestas solicitadas
@@ -204,7 +204,7 @@ export var counter = 1
 
 func _ready():
 	#el tiempo para mostrar el resultado
-	timer.set_wait_time(2)
+	timer.set_wait_time(3)
 	#Posición y tamaño de la imágen.
 	var fondo = get_node("Fondo").get_rect()
 	#Tamaño de la imágen.
@@ -255,7 +255,6 @@ func _encaja(nodo, n):
 	if mi_numero == nodo_entrante:
 		#Llamamos al nodo entrante en la escena principal.
 		pza = get_node("../" + nodo.get_parent().get_name())
-		print(pza)
 		#Indicamos que hay una pieza la casilla correcta.
 		esta_dentro = true
 		
@@ -293,8 +292,9 @@ func mostrar_test():
 	if not get_parent().box:
 		#----------------------------------------------------------
 		var nroQ = randi() % 9 #solucionar el caso en que repita la pregunta
-		#while nroQ in mostradas:
-		#	nroQ = randi() % 9
+		while nroQ in mostradas:
+			nroQ = randi() % 9
+		mostradas.append(nroQ)	
 		#----------------------------------------------------------
 		#obtenemos la pregunta que se relaciona con la curiosidad mostrada
 		var Q = evaluacion[nroQ-1]
@@ -310,24 +310,23 @@ func mostrar_test():
 		test.get_node("NinePatchRect/opt2/img").set_texture(load(data[Q[0]]['imagenes'][Q[1]][1]))
 		#opcion3
 		test.get_node("NinePatchRect/opt3/img").set_texture(load(data[Q[0]]['imagenes'][Q[1]][2]))
-		print('mostrando test')
+		
 		get_parent().add_child(test)
 		var lugar = Vector2(640,410)
 		test.set_global_position(lugar)	
 		counter+=1
+		mostrar = false
 	else:
-		print('entro aqui')
 		mostrar = true	
 
 func calcular_resultado(opcion):
-	print('resultado calculado')
-	print(opcion)
-	print(respuestas)
 	var elemento = respuestas[-1]
+	mostrar = false
 	var test = preload("res://scenes/evaluacion/Resultado.tscn").instance()
 	if opcion == elemento:
 		print('correcto')
 		get_parent().add_child(test)
+		nota_nivel+=1
 		#var lugar = Vector2(640,410)
 		#test.set_global_position(lugar)	
 	else:
@@ -336,7 +335,9 @@ func calcular_resultado(opcion):
 		get_parent().add_child(test)
 		#var lugar = Vector2(640,410)
 		#test.set_global_position(lugar)
+	timer.set_wait_time(2)
 	timer.start()
+	
 
 	
 func _physics_process(_delta):
@@ -359,13 +360,19 @@ func _physics_process(_delta):
 		# warning-ignore:return_value_discarded
 		if mostrar:
 			mostrar = false
+			print('entro aqui')
 			mostrar_test()
 		#get_tree().change_scene("res://Inicio.tscn")
+
+func resultado_final():
+	if nota_nivel >= 2:
+		print('aprobado')
+	else:
+		print('reprobado')
 	
-
-
 func _on_Timer_timeout():
 	if counter == 4:
 		mostrar = false
+		resultado_final()
 	else:
 		mostrar = true

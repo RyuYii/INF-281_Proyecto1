@@ -7,8 +7,6 @@ onready var timer = get_node("Timer")
 func _ready():
 	timer.set_wait_time(2)
 	timer.start()
-	pass # Replace with function body.
-
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
