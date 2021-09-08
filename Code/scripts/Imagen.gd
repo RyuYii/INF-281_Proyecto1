@@ -191,7 +191,7 @@ var respuestas = []
 #preguntas usadas
 var mostradas = []
 #posible nota
-var nota_nivel = 0
+export var nota_nivel = 0
 #Cuantas piezas tienes de ancho y de alto.
 var piezas = Vector2(3, 3)
 #Cuanto mide una colisión.
@@ -360,7 +360,6 @@ func _physics_process(_delta):
 		# warning-ignore:return_value_discarded
 		if mostrar:
 			mostrar = false
-			print('entro aqui')
 			mostrar_test()
 		#get_tree().change_scene("res://Inicio.tscn")
 

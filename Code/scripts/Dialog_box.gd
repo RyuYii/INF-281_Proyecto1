@@ -16,6 +16,5 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	if Input.is_action_pressed("ui_right"):
-		print(get_parent().get_name())
 		get_parent().box = false
 		free()
