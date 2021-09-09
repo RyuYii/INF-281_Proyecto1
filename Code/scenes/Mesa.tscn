@@ -8,12 +8,12 @@
 script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 663.82, 409.109 )
-scale = Vector2( 0.547747, 0.257011 )
+position = Vector2( 641.345, 409.109 )
+scale = Vector2( 0.530611, 0.257011 )
 texture = ExtResource( 3 )
 
 [node name="Imagen" parent="." instance=ExtResource( 1 )]
-position = Vector2( 517.015, 29.3006 )
+position = Vector2( 469.069, 30.7989 )
 
 [node name="Area" type="Control" parent="."]
 margin_left = 258.194

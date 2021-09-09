@@ -1,6 +1,9 @@
 extends Node2D
 
 #Total de piezas que tiene el rompecabezas.
+
+export var box = false
+var puntuacion = 0
 var numero_piezas = 13
 var escalas = [
 	0,
@@ -18,6 +21,10 @@ var escalas = [
 	[0.56,0.56],
 	[0.49,0.49]
 ]
+
+func resultado(opcion):
+	get_node("Imagen2").calcular_resultado(opcion)
+	
 func _ready():
 	#Generamos aleatoridad.
 	randomize()

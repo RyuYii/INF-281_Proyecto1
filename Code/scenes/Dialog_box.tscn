@@ -8,30 +8,31 @@
 [ext_resource path="res://src/img/borders/button.png" type="Texture" id=6]
 
 [sub_resource type="DynamicFontData" id=1]
-font_path = "res://src/fonts/Summer Calling/Summer Calling.ttf"
+font_path = "res://src/fonts/KOMTXTT_.ttf"
 
 [sub_resource type="DynamicFont" id=2]
+size = 23
 extra_spacing_top = 2
 extra_spacing_char = 2
 extra_spacing_space = 1
 font_data = SubResource( 1 )
 
-[sub_resource type="DynamicFontData" id=4]
-font_path = "res://src/fonts/Summer Calling/Summer Calling.ttf"
+[sub_resource type="DynamicFontData" id=3]
+font_path = "res://src/fonts/Kid Games.ttf"
 
-[sub_resource type="DynamicFont" id=5]
-size = 20
-font_data = SubResource( 4 )
+[sub_resource type="DynamicFont" id=4]
+size = 37
+font_data = SubResource( 3 )
 
-[sub_resource type="DynamicFontData" id=6]
+[sub_resource type="DynamicFontData" id=5]
 hinting = 1
-font_path = "res://src/fonts/Summer Calling/Summer Calling.ttf"
+font_path = "res://src/fonts/Kid Games.ttf"
 
-[sub_resource type="DynamicFont" id=7]
-size = 22
-font_data = SubResource( 6 )
+[sub_resource type="DynamicFont" id=6]
+size = 38
+font_data = SubResource( 5 )
 
-[sub_resource type="Animation" id=8]
+[sub_resource type="Animation" id=7]
 resource_name = "PressSpace"
 loop = true
 tracks/0/type = "value"
@@ -50,6 +51,10 @@ tracks/0/keys = {
 [node name="Dialog_box" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_left = -0.529724
+margin_top = -0.529732
+margin_right = -0.529785
+margin_bottom = -0.529724
 script = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -60,10 +65,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -400.0
-margin_top = -250.0
-margin_right = 400.0
-margin_bottom = 250.0
+margin_left = -436.081
+margin_top = -258.909
+margin_right = 363.919
+margin_bottom = 241.091
 rect_min_size = Vector2( 800, 500 )
 texture = ExtResource( 1 )
 patch_margin_left = 5
@@ -92,7 +97,9 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 2 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
-text = "Aqui ira el texto con los datos curiosos de los deptos xD Para mas informacion dale like..."
+text = "Aqui ira el texto con los datos curiosos de los deptos xD Para mas informacion dale like...
+Veamos los caracteres especiales ¿? á é´i oñÑ
+Todo correcto todo bien"
 autowrap = true
 
 [node name="BodyAnimationPlayer" parent="BodyNinePatchRect/MarginContainer/BodyLabel" instance=ExtResource( 4 )]
@@ -100,7 +107,7 @@ autowrap = true
 [node name="SpeakerNinePatchRect" type="NinePatchRect" parent="BodyNinePatchRect"]
 margin_left = -88.0
 margin_top = -30.0
-margin_right = 256.0
+margin_right = 303.0
 margin_bottom = 62.0
 texture = ExtResource( 5 )
 patch_margin_left = 5
@@ -114,9 +121,13 @@ __meta__ = {
 [node name="SpeakerLabel" type="Label" parent="BodyNinePatchRect/SpeakerNinePatchRect"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-custom_fonts/font = SubResource( 5 )
-custom_colors/font_color = Color( 0, 0, 0, 1 )
-text = "Speaker"
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_outline_modulate = Color( 0.231373, 0.733333, 0.27451, 1 )
+custom_colors/font_color_shadow = Color( 0.137255, 0.133333, 0.427451, 1 )
+custom_constants/shadow_offset_x = -2
+custom_constants/shadow_offset_y = 3
+custom_constants/shadow_as_outline = 1
+text = "LA PAZ"
 align = 1
 valign = 1
 __meta__ = {
@@ -138,8 +149,10 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 margin_top = 1.05951
 margin_bottom = 1.05951
-custom_fonts/font = SubResource( 7 )
-text = "Press"
+custom_fonts/font = SubResource( 6 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "PRESS"
 align = 1
 valign = 1
 __meta__ = {
@@ -148,7 +161,7 @@ __meta__ = {
 
 [node name="SpaceAnimationPlayer" type="AnimationPlayer" parent="BodyNinePatchRect/SpaceNinePatchRect2"]
 autoplay = "PressSpace"
-anims/PressSpace = SubResource( 8 )
+anims/PressSpace = SubResource( 7 )
 
 [node name="Personaje" type="NinePatchRect" parent="BodyNinePatchRect"]
 anchor_left = 1.0

@@ -1,25 +1,25 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://scenes/Imagen2.tscn" type="PackedScene" id=1]
-[ext_resource path="res://src/img/background.jpg" type="Texture" id=2]
+[ext_resource path="res://src/img/borders/title.png" type="Texture" id=2]
 [ext_resource path="res://scripts/Mesa2.gd" type="Script" id=3]
 
 [node name="Mesa2" type="Node2D"]
 script = ExtResource( 3 )
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 640.469, 411.475 )
-scale = Vector2( 3.74481, 3.3608 )
+position = Vector2( 642.729, 410.259 )
+scale = Vector2( 0.533423, 0.44165 )
 texture = ExtResource( 2 )
 
 [node name="Imagen2" parent="." instance=ExtResource( 1 )]
-position = Vector2( 468.97, 7.49158 )
+position = Vector2( 510.242, 5.90418 )
 
 [node name="Area" type="Control" parent="."]
-margin_left = 207.99
-margin_top = 335.939
-margin_right = 294.99
-margin_bottom = 541.939
+margin_left = 290.535
+margin_top = 297.841
+margin_right = 377.535
+margin_bottom = 503.841
 __meta__ = {
 "_edit_use_anchors_": false
 }

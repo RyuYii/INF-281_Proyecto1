@@ -270,7 +270,7 @@ func mostrarDialog(depto):
 	var titulo = pieza.get_children()[0].get_children()[1].get_children()[0]
 	var descripcion = pieza.get_children()[0].get_children()[0].get_children()[0]
 #	
-	titulo.text = data[depto]['titulo']
+	titulo.text = data[depto]['titulo'].to_upper()
 	var nroDato = randi() % len(data[depto]['datos'])
 	#carga la info segun la variable data
 	descripcion.text = data[depto]['datos'][nroDato][0]
