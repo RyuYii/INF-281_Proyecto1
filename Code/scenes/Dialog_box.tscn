@@ -107,7 +107,7 @@ autowrap = true
 [node name="SpeakerNinePatchRect" type="NinePatchRect" parent="BodyNinePatchRect"]
 margin_left = -88.0
 margin_top = -30.0
-margin_right = 303.0
+margin_right = 550.0
 margin_bottom = 62.0
 texture = ExtResource( 5 )
 patch_margin_left = 5

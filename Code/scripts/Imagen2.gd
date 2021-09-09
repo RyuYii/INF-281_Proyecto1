@@ -4,247 +4,321 @@ var data = {
 	'1': {
 		'titulo': 'Guayana Francesa',
 		'datos': [
-			['dato1','imgurl'],
-			['dato2','imgurl']
+			['Las playas, No esperes playas de arena blanca y aguas turquesas en la Guayana francesa; sino, más bien, playas de arena negra y aguas marrones de aspecto turbulento. El motivo es que, en las costas, desembocan tantos ríos que el agua del mar está revuelta y llena de sedimentos.',
+				"res://src/img/data/nivel3/GUF1.jpg"],
+			['El centro espacial de la Guayana francesa, Desde el centro espacial de Kourou se lanzan el 80% de los satélites que orbitan la Tierra. El hecho de ser una zona libre de ciclones y movimientos sísmicos facilita este hecho.',
+				"res://src/img/data/nivel3/GUF2.jpg"]
 				],
-		'preguntas':['¿Qué bandera corresponde al departamento de Pando?',
-			'¿En qué departamento se encuentra el monumento a los Héroes de Bahía o de Tres Cabezas?'],
+		'preguntas':['Encuentra las playas de Guyana francesa.',
+			'¿Qué país tiene el centro espacial Kourou?'],
 		'imagenes':[
-			[	"res://src/img/data/nivel1/1er_NIVEL_Eval/Banderas_de_ Bolivia/Bd_PD.png",
-				"res://src/img/data/nivel1/1er_NIVEL_Eval/Banderas_de_ Bolivia/Bd_PT.png",
-				"res://src/img/data/nivel1/1er_NIVEL_Eval/Banderas_de_ Bolivia/Bd_CH.png"],
-			[	"res://src/img/data/nivel1/1er_NIVEL_Eval/Presentacion_de_Departamentos/Cochabamba.jpg",
-				"res://src/img/data/nivel1/1er_NIVEL_Eval/Presentacion_de_Departamentos/La_Paz.jpg",
-				"res://src/img/data/nivel1/1er_NIVEL_Eval/Presentacion_de_Departamentos/Pando.jpg"]
+			[	"res://src/img/data/nivel3/Q/image5.png",
+				"res://src/img/data/nivel3/Q/image33.png",
+				"res://src/img/data/nivel3/Q/image41.png"],
+			[	"res://src/img/data/nivel3/Q/image15.png",
+				"res://src/img/data/nivel3/Q/image27.png",
+				"res://src/img/data/nivel3/Q/image7.png"]
 		],
-		'respuesta':['1','3']
+		'respuesta':['1','2']
 		},
 	'2': {
 		'titulo': 'Surinam',
 		'datos': [
-			['dato1','imgurl'],
-			['dato2','imgurl']
+			['Paramaribo, su capital es un área de gran riqueza cultural, reflejo de variadas influencias históricas. Por esto fue designada como Patrimonio de la Humanidad por la UNESCO.',
+				"res://src/img/data/nivel3/SU1.jpg"],
+			['Es el país más chico de Sudamérica, tiene  163.000 kilómetros cuadrados aproximadamente, para ponerlo en perspectiva, Argentina cuenta con ‎2.780.400 km².',
+				"res://src/img/data/nivel3/SU2.jpg"]
 				],
 		'preguntas':[
-				'',
-				''
+				'Elige ¿cual es la ciudad de Paramaribo?',
+				'¿Cuál es el país más chico de sudamérica?'
 			],
 		'imagenes':[
-				[],
-				[]
+				["res://src/img/data/nivel3/Q/image54.png",
+				"res://src/img/data/nivel3/Q/image41.png",
+				"res://src/img/data/nivel3/Q/image56.png"],
+				["res://src/img/data/nivel3/Q/image8.png",
+				"res://src/img/data/nivel3/Q/image16.png",
+				"res://src/img/data/nivel3/Q/image26.png"]
 			],
 		'respuesta':[
-				'',
-				''
+				'1',
+				'2'
 			]
 		},
 	'3': {
 		'titulo': 'Guyana',
 		'datos': [
-			['dato1','imgurl'],
-			['dato2','imgurl']
+			['El escudo de las Guayanas, también llamado “el macizo guayanés”, es una de las formaciones rocosas más antiguas del mundo, con más de 1.700 millones de años. Guyana comparte este escudo con Venezuela, Brasil y Surinam. Es uno de los atractivos turísticos más codiciados del país.',
+				"res://src/img/data/nivel3/GUA1.jpg"],
+			['En Guyana se encuentra uno de los ríos más extensos del mundo, el río Esequibo con 1.014 km de largo. Este río tiene uno de los estuarios más grandes del continente, siendo superado solo por el río de la Plata.',
+				"res://src/img/data/nivel3/GUA2.jpg"]
 				],
 		'preguntas':[
-				'',
-				''
+				'¿Cuál es el escudo de las Guayanas?',
+				'¿En qué país se encuentra el río Esequibo?'
 			],
 		'imagenes':[
-				[],
-				[]
+				["res://src/img/data/nivel3/Q/image30.png",
+				"res://src/img/data/nivel3/Q/image42.png",
+				"res://src/img/data/nivel3/Q/image13.png"],
+				["res://src/img/data/nivel3/Q/image64.png",
+				"res://src/img/data/nivel3/Q/image15.png",
+				"res://src/img/data/nivel3/Q/image8.png"]
 			],
 		'respuesta':[
-				'',
-				''
+				'1',
+				'1'
 			]
 		},
 	'4': {
 		'titulo': 'Venezuela',
 		'datos': [
-			['dato1','imgurl'],
-			['dato2','imgurl']
+			['El salto del ángel, la cascada ininterrumpida más alta del mundo, se encuentra en Venezuela. Con una altura de 3,212 pies es aproximadamente 15 veces más alto que las Cataratas del Niágara. Se encuentra en el mítico Parque Natural Canaima, donde se encuentran especies únicas por su clima tan especial.',
+				"res://src/img/data/nivel3/VE1.jpg"],
+			['La Arepa, el mejor desayuno que podrás comer, Los venezolanos comen arepas por lo menos una vez a la semana. La verdad es que la gente en Venezuela come arepas no sólo para el desayuno, sino para el almuerzo, la cena y el aperitivo también.',
+				"res://src/img/data/nivel3/VE2.jpg"]
 				],
 		'preguntas':[
-				'',
-				''
+				'¿En qué país se encuentra el salto del ángel?',
+				'¿Cuál es la Arepa Venezolana?'
 			],
 		'imagenes':[
-				[],
-				[]
+				["res://src/img/data/nivel3/Q/image11.png",
+				"res://src/img/data/nivel3/Q/image10.png",
+				"res://src/img/data/nivel3/Q/image15.png"],
+				["res://src/img/data/nivel3/Q/image9.png",
+				"res://src/img/data/nivel3/Q/image35.png",
+				"res://src/img/data/nivel3/Q/image38.png"]
 			],
 		'respuesta':[
-				'',
-				''
+				'2',
+				'1'
 			]
 		},
 	'5': {
 		'titulo': 'Colombia',
 		'datos': [
-			['dato1','imgurl'],
-			['dato2','imgurl']
+			['Caño Cristales es una maravilla natural de Colombia, y es fascinante porque es de cinco colores diferentes. Es conocido porque sus aguas se ven de color amarillo, verde, azul, rojo y negro. Los diferentes colores los provoca una planta que habita en el cauce del río.',
+				"res://src/img/data/nivel3/CO1.jpg"],
+			['Las esmeraldas son unas piedras preciosas de color verde muy apreciadas en la industria de la joyería en todo el mundo. Colombia abarca entre el 70 y el 90 % del mercado global de esmeraldas. Su comercialización se remonta a la era precolombina.',
+				"res://src/img/data/nivel3/CO2.jpg"]
 				],
 		'preguntas':[
-				'',
-				''
+				'¿En qué país se encuentra el río con 5 colores diferentes?',
+				'¿Cuál es la Esmeralda?'
 			],
 		'imagenes':[
-				[],
-				[]
+				["res://src/img/data/nivel3/Q/image26.png",
+				"res://src/img/data/nivel3/Q/image32.png",
+				"res://src/img/data/nivel3/Q/image53.png"],
+				["res://src/img/data/nivel3/Q/image63.png",
+				"res://src/img/data/nivel3/Q/image43.png",
+				"res://src/img/data/nivel3/Q/image45.png"]
 			],
 		'respuesta':[
-				'',
-				''
+				'2',
+				'3'
 			]
 		},
 	'6': {
 		'titulo': 'Ecuador',
 		'datos': [
-			['dato1','imgurl'],
-			['dato2','imgurl']
+			['Chimborazo es uno de los volcanes más famosos y el punto más alto de Ecuador con 6310 msnm, que además es el punto más cercano al Sol de la Tierra.',
+				"res://src/img/data/nivel3/EC1.jpg"],
+			['En Ecuador se come Cuy, una de las comidas más exóticas de América Latina. Te sorprenderá saber que es un conejillo de indias o cobaya cocinado en guiso, al palo, al horno o frito. ¿Te atreverías a probarlo?',
+				"res://src/img/data/nivel3/EC2.jpg"]
 				],
 		'preguntas':[
-				'',
-				''
+				'¿Cuál es el volcán Chimborazo?',
+				'¿En qué país se come el Cuy?'
 			],
 		'imagenes':[
-				[],
-				[]
+				["res://src/img/data/nivel3/Q/image40.png",
+				"res://src/img/data/nivel3/Q/image30.png",
+				"res://src/img/data/nivel3/Q/image48.png"],
+				["res://src/img/data/nivel3/Q/image7.png",
+				"res://src/img/data/nivel3/Q/image11.png",
+				"res://src/img/data/nivel3/Q/image27.png"]
 			],
 		'respuesta':[
-				'',
-				''
+				'1',
+				'2'
 			]
 		},
 	'7': {
 		'titulo': 'Peru',
 		'datos': [
-			['dato1','imgurl'],
-			['dato2','imgurl']
+			['Machu Picchu, o como dirían los incas, montaña vieja es uno de estos lugares. Se dice que es tan especial que fue declarado Patrimonio en 1983 y pertenece a la región de Cusco.',
+				"res://src/img/data/nivel3/PE1.jpg"],
+			['El Cañón de Cotahuasi de Perú, lo más seguro es que conozcas el Gran Cañón de EE.UU. y pienses que es el más profundo. Sin embargo, no es así, el Cañón de Cotahuasi es dos veces más profundo.',
+				"res://src/img/data/nivel3/PE2.jpg"]
 				],
 		'preguntas':[
-				'',
-				''
+				'Indica ¿cuál es el Machu Picchu',
+				'¿Dónde se encuentra el Cañón de Cotahuasi?'
 			],
 		'imagenes':[
-				[],
-				[]
+				["res://src/img/data/nivel3/Q/image24.png",
+				"res://src/img/data/nivel3/Q/image28.png",
+				"res://src/img/data/nivel3/Q/image41.png"],
+				["res://src/img/data/nivel3/Q/image10.png",
+				"res://src/img/data/nivel3/Q/image15.png",
+				"res://src/img/data/nivel3/Q/image14.png"]
 			],
 		'respuesta':[
-				'',
-				''
+				'1',
+				'3'
 			]
 		},
 	'8': {
 		'titulo': 'Brasil',
 		'datos': [
-			['dato1','imgurl'],
-			['dato2','imgurl']
+			['La estatua del Cristo Redentor ubicada en Río de Janeiro increíblemente tiene un peso de más de 630 toneladas y mide 38 metros de altura. Además, en el año 2007 fue catalogada como una de las 7 nuevas maravillas del mundo.',
+				"res://src/img/data/nivel3/BR1.jpg"],
+			['Brasil posee 22 Patrimonios Mundiales de la UNESCO. Entre los más conocidos se encuentra el Parque nacional de Iguazú, que alberga una de las cataratas más grandes e impresionantes del mundo; las Cataratas del Iguazú.',
+				"res://src/img/data/nivel3/BR2.jpg"]
 				],
 		'preguntas':[
-				'',
-				''
+				'¿En qué país se encuentra la estatua del Cristo Redentor?',
+				'¿Cuáles son las cataratas de Iguazú?'
 			],
 		'imagenes':[
-				[],
-				[]
+				["res://src/img/data/nivel3/Q/image39.png",
+				"res://src/img/data/nivel3/Q/image14.png",
+				"res://src/img/data/nivel3/Q/image15.png"],
+				["res://src/img/data/nivel3/Q/image46.png",
+				"res://src/img/data/nivel3/Q/image31.png",
+				"res://src/img/data/nivel3/Q/image33.png"]
 			],
 		'respuesta':[
-				'',
-				''
+				'1',
+				'1'
 			]
 		},
 	'9': {
 		'titulo': 'Bolivia',
 		'datos': [
-			['dato1','imgurl'],
-			['dato2','imgurl']
+			['El Salar de Uyuni tiene el mayor suministro de litio del mundo. Un 50-70% de las reservas de litio del planeta están enterradas debajo de este paisaje fotogénico, que tiene el potencial de revolucionar completamente la economía en posibles dificultades de Bolivia.',
+				"res://src/img/data/nivel3/Bo1.jpg"],
+			['El Alto es la ciudad más poblada a mayor altura del planeta, en ella se ubica el aeropuerto internacional a mayor altitud del mundo. Es una altitud de 4.061 metros sobre el nivel del mar.',
+				"res://src/img/data/nivel3/BO2.jpg"]
 				],
 		'preguntas':[
-				'',
-				''
+				'¿En qué país se encuentra la mayor reserva de litio del mundo? ',
+				'Indica ¿cuál es la ciudad de El Alto?'
 			],
 		'imagenes':[
-				[],
-				[]
+				["res://src/img/data/nivel3/Q/image4.png",
+				"res://src/img/data/nivel3/Q/image58.jpg",
+				"res://src/img/data/nivel3/Q/image55.png"],
+				["res://src/img/data/nivel3/Q/image6.jpg",
+				"res://src/img/data/nivel3/Q/image56.png",
+				"res://src/img/data/nivel3/Q/image44.png"]
 			],
 		'respuesta':[
-				'',
-				''
+				'3',
+				'1'
 			]
 		},
 	'10': {
 		'titulo': 'Paraguay',
 		'datos': [
-			['dato1','imgurl'],
-			['dato2','imgurl']
+			['La sopa paraguaya, es famosa por ser la única sopa sólida del mundo. Es un bizcochuelo esponjoso salado, de muy rico contenido calórico y proteico, y tiene como ingredientes principales harina de maíz, huevo, leche, queso y aceite o grasa de cerdo.',
+				"res://src/img/data/nivel3/PA1.png"],
+			['Paraguay es el país más feliz del mundo. No es la primera vez que la organización Gallup vuelve a posicionar a Paraguay como el más feliz del mundo. Esto se debe a que, según los investigadores, presenta la característica cultural de resaltar en mayor medida los aspectos positivos de la vida, lo que evita los sentimientos de tristeza.',
+				"res://src/img/data/nivel3/PA2.jpg"]
 				],
 		'preguntas':[
-				'',
-				''
+				'¿Cuál es la sopa sólida paraguaya?',
+				'El país más feliz del mundo es...'
 			],
 		'imagenes':[
-				[],
-				[]
+				["res://src/img/data/nivel3/Q/image9.png",
+				"res://src/img/data/nivel3/Q/image38.png",
+				"res://src/img/data/nivel3/Q/image19.png"],
+				["res://src/img/data/nivel3/Q/image53.png",
+				"res://src/img/data/nivel3/Q/image38.png",
+				"res://src/img/data/nivel3/Q/image16.png"]
 			],
 		'respuesta':[
-				'',
-				''
+				'3',
+				'2'
 			]
 		},
 	'11': {
 		'titulo': 'Uruguay',
 		'datos': [
-			['dato1','imgurl'],
-			['dato2','imgurl']
+			['El mate es más o menos la bebida nacional de Uruguay. El consumo de mate eclipsa fácilmente el consumo de refrescos per cápita. El 90% de los uruguayos prefieren esta bebida amarga y herbal.',
+				"res://src/img/data/nivel3/UR1.jpg"],
+			['Tiene la conexión a Internet más rápida de Sudamérica. Uruguay no solo ha liderado el ranking de los países de latinoamérica con la conexión a internet más rápida, en 2009, se convirtió en el primer país del mundo en brindar a todos los escolares una computadora portátil gratuita y acceso a Wi-Fi.',
+				"res://src/img/data/nivel3/UR2.jpg"]
 				],
 		'preguntas':[
-				'',
-				''
+				'Indicar la bebida nacional de Uruguay...',
+				'¿Qué país tiene la conexión de internet más rápida de Sudamérica?'
 			],
 		'imagenes':[
-				[],
-				[]
+				["res://src/img/data/nivel3/Q/image35.png",
+				"res://src/img/data/nivel3/Q/image19.png",
+				"res://src/img/data/nivel3/Q/image52.png"],
+				["res://src/img/data/nivel3/Q/image8.png",
+				"res://src/img/data/nivel3/Q/image32.png",
+				"res://src/img/data/nivel3/Q/image15.png"]
 			],
 		'respuesta':[
-				'',
-				''
+				'1',
+				'3'
 			]
 		},
 	'12': {
 		'titulo': 'Argentina',
 		'datos': [
-			['dato1','imgurl'],
-			['dato2','imgurl']
+			['El Río de la Plata, está formado por la unión de los ríos Paraná y Uruguay y con un ancho máximo de 219 km. Lamentablemente su estado deja mucho que desear y sus aguas están altamente contaminadas debido a la cercanía con la capital, es uno de los ríos más contaminados del planeta y está prohibido bañarse en él.',
+				"res://src/img/data/nivel3/AR1.jpg"],
+			['No lo llaman "El Tren del Fin del Mundo" por nada. La emblemática vía férrea de Tierra del Fuego es la más austral del mundo, es decir que es la que corre más al sur del globo. Sus orígenes se remontan al año 1902 y en su recorrido se desplaza por bosques y paisajes imperdibles de la provincia patagónica.',
+				"res://src/img/data/nivel3/AR2.jpg"]
 				],
 		'preguntas':[
-				'',
-				''
+				'Indica cuál es el río de la plata',
+				'Indicar ¿Cuál es el tren del fin del mundo?'
 			],
 		'imagenes':[
-				[],
-				[]
+				["res://src/img/data/nivel3/Q/image31.png",
+				"res://src/img/data/nivel3/Q/image33.png",
+				"res://src/img/data/nivel3/Q/image56.png"],
+				["res://src/img/data/nivel3/Q/image1.png",
+				"res://src/img/data/nivel3/Q/image18.png",
+				"res://src/img/data/nivel3/Q/image23.png"]
 			],
 		'respuesta':[
-				'',
-				''
+				'1',
+				'1'
 			]
 		},
 	'13': {
 		'titulo': 'Chile',
 		'datos': [
-			['dato1','imgurl'],
-			['dato2','imgurl']
+			['Chile tiene la piscina más larga del mundo, ubicada en la ciudad costera de Algarrobo, que equivale a la longitud de 20 piscinas olímpicas convirtiéndola en un Récord Guinness a nivel mundial.',
+				"res://src/img/data/nivel3/CHI1.jpg"],
+			['La momia más antigua del mundo fue encontrada en Chile. Conocida como la momia Chinchorro, es un resto momificado de una persona de una antigua tribu Chinchorro del Desierto de Atacama, que data entre los años 5050 y 3000 AC, lo que significa que la gente de Atacama, ¡fueron momificados hasta 2.000 años antes que los egipcios!',
+				"res://src/img/data/nivel3/CHI2.jpg"]
 				],
 		'preguntas':[
-				'',
-				''
+				'¿Cuál es la piscina más larga del mundo?',
+				'¿La momia más antigua del mundo fue encontrada en...?'
 			],
 		'imagenes':[
-				[],
-				[]
+				["res://src/img/data/nivel3/Q/image41.png",
+				"res://src/img/data/nivel3/Q/image31.png",
+				"res://src/img/data/nivel3/Q/image13.png"],
+				["res://src/img/data/nivel3/Q/image39.png",
+				"res://src/img/data/nivel3/Q/image7.png",
+				"res://src/img/data/nivel3/Q/image26.png"]
 			],
 		'respuesta':[
-				'',
-				''
+				'1',
+				'3'
 			]
 		}
 	}
@@ -357,9 +431,9 @@ func mostrarDialog(depto):
 func mostrar_test():
 	if not get_parent().box:
 		#----------------------------------------------------------
-		var nroQ = randi() % 9 #solucionar el caso en que repita la pregunta
+		var nroQ = randi() % 13 #solucionar el caso en que repita la pregunta
 		while nroQ in mostradas:
-			nroQ = randi() % 9
+			nroQ = randi() % 13
 		mostradas.append(nroQ)	
 		#----------------------------------------------------------
 		#obtenemos la pregunta que se relaciona con la curiosidad mostrada
@@ -420,7 +494,7 @@ func _physics_process(_delta):
 			acumulado += 1
 			mostrarDialog(n_pza)
 			
-	if acumulado == piezas.x * piezas.y:
+	if acumulado == 13:
 		
 		#Si ponemos todas las piezas: cambiamos de escena.
 		# warning-ignore:return_value_discarded
