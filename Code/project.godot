@@ -16,13 +16,20 @@ _global_script_class_icons={
 [application]
 
 config/name="Code"
-run/main_scene="res://scenes/Mesa.tscn"
+run/main_scene="res://Menus/MainMenu.tscn"
 config/icon="res://icon.png"
+
+[autoload]
+
+SonidoM="*res://Menus/SonidoM.tscn"
+Global="*res://Global.gd"
 
 [display]
 
 window/size/width=1280
 window/size/height=820
+window/stretch/mode="2d"
+window/stretch/aspect="keep"
 
 [rendering]
 

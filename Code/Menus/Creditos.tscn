@@ -1,0 +1,104 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://src/fonts/Hamberger-Bold.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://src/fonts/Armstrong.otf" type="DynamicFontData" id=2]
+[ext_resource path="res://src/fonts/Balbaleo.otf" type="DynamicFontData" id=3]
+[ext_resource path="res://src/fonts/Armstrong Oblique.otf" type="DynamicFontData" id=4]
+[ext_resource path="res://GUI/block_UI_six.png" type="Texture" id=5]
+[ext_resource path="res://GUI/block_UI_double@2x.png" type="Texture" id=6]
+[ext_resource path="res://Menus/Creditos.gd" type="Script" id=7]
+
+[sub_resource type="DynamicFont" id=1]
+size = 80
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 120
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 40
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 30
+font_data = ExtResource( 3 )
+
+[node name="CanvasLayer" type="CanvasLayer"]
+script = ExtResource( 7 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 1279.0
+margin_bottom = 826.0
+color = Color( 0.933333, 0.737255, 0.0745098, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="titulo" type="Label" parent="."]
+margin_left = 801.876
+margin_top = 96.8863
+margin_right = 1138.88
+margin_bottom = 180.886
+custom_fonts/font = SubResource( 1 )
+text = "Créditos"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="logo" type="Label" parent="."]
+margin_left = 41.5049
+margin_top = 69.866
+margin_right = 546.505
+margin_bottom = 190.866
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0.168627, 0.388235, 0.0980392, 1 )
+text = "GOPuzzle"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="block_UI_double2x" type="Sprite" parent="."]
+position = Vector2( 658.678, 426.494 )
+scale = Vector2( 4.20821, 3.23476 )
+texture = ExtResource( 6 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 159.54
+margin_top = 267.419
+margin_right = 1172.54
+margin_bottom = 579.419
+custom_fonts/font = SubResource( 3 )
+text = "Diseño de Mapas:      Surco Turpo Ruddy Wilmer
+Programación:           Surco Turpo Ruddy Wilmer
+Diseño GUI:               Huanca Coque Erika Magaly
+Arte 2D:                    Huanca Coque Erika Magaly
+Sonido:                      Mamani Nina Omar Freddy
+Contenido textual:     Mamani Nina Omar Freddy  
+"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureButton" type="TextureButton" parent="."]
+margin_left = 849.386
+margin_top = 663.989
+margin_right = 1233.39
+margin_bottom = 727.989
+texture_normal = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="TextureButton"]
+margin_left = 31.3097
+margin_top = 10.2206
+margin_right = 348.31
+margin_bottom = 53.2206
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0.27451, 0.184314, 0.0705882, 1 )
+text = "Volver al Menú Principal"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]

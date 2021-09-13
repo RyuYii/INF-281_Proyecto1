@@ -1,8 +1,19 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://scenes/Imagen.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scripts/Mesa.gd" type="Script" id=2]
 [ext_resource path="res://src/img/borders/fondo2.png" type="Texture" id=3]
+[ext_resource path="res://src/fonts/Balbaleo.otf" type="DynamicFontData" id=4]
+[ext_resource path="res://GUI/block_UI_six.png" type="Texture" id=5]
+[ext_resource path="res://GUI/back.png" type="Texture" id=6]
+
+[sub_resource type="DynamicFont" id=1]
+size = 30
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 30
+font_data = ExtResource( 4 )
 
 [node name="Mesa" type="Node2D"]
 script = ExtResource( 2 )
@@ -11,6 +22,11 @@ script = ExtResource( 2 )
 position = Vector2( 641.345, 409.109 )
 scale = Vector2( 0.530611, 0.257011 )
 texture = ExtResource( 3 )
+
+[node name="back" type="Sprite" parent="Sprite"]
+position = Vector2( -4.97089, -3.05701 )
+scale = Vector2( 5.91213, 12.5623 )
+texture = ExtResource( 6 )
 
 [node name="Imagen" parent="." instance=ExtResource( 1 )]
 position = Vector2( 469.069, 30.7989 )
@@ -23,3 +39,53 @@ margin_bottom = 556.788
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+margin_left = 855.0
+margin_top = 36.3376
+margin_right = 1239.0
+margin_bottom = 174.338
+custom_constants/separation = 10
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Volver_Selec_Nivel" type="TextureButton" parent="VBoxContainer"]
+margin_right = 384.0
+margin_bottom = 64.0
+texture_normal = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="VBoxContainer/Volver_Selec_Nivel"]
+margin_left = 40.213
+margin_top = 7.40552
+margin_right = 347.213
+margin_bottom = 50.4055
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.27451, 0.184314, 0.0705882, 1 )
+text = "Volver a Selección de nivel"
+
+[node name="Volver_Menu" type="TextureButton" parent="VBoxContainer"]
+margin_top = 74.0
+margin_right = 384.0
+margin_bottom = 138.0
+texture_normal = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="VBoxContainer/Volver_Menu"]
+margin_left = 37.0812
+margin_top = 9.5351
+margin_right = 354.081
+margin_bottom = 52.5351
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0.27451, 0.184314, 0.0705882, 1 )
+text = "Volver al Menú Principal"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="VBoxContainer/Volver_Selec_Nivel" to="." method="_on_Volver_Selec_Nivel_pressed"]
+[connection signal="pressed" from="VBoxContainer/Volver_Menu" to="." method="_on_Volver_Menu_pressed"]
