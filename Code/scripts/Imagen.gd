@@ -19,7 +19,13 @@ var data = {
 				"res://src/img/data/nivel1/1er_NIVEL_Eval/Banderas_de_ Bolivia/Bd_OR.png",
 				"res://src/img/data/nivel1/1er_NIVEL_Eval/Banderas_de_ Bolivia/Bd_LP.png"]
 		],
-		'respuesta':['2','3']
+		'respuesta':['2','3'],
+		'sounds':{
+			'cur':["res://src/sound/Bolivia/LP_Cur1.ogg",
+				"res://src/sound/Bolivia/LP_Cur2.ogg"],
+			'test':["res://src/sound/Bolivia/LP_preg1.ogg",
+				"res://src/sound/Bolivia/LP_preg2.ogg"]
+		}
 		},
 	'2': {
 		'titulo': 'Oruro',
@@ -39,7 +45,13 @@ var data = {
 				"res://src/img/data/nivel1/1er_NIVEL_Eval/Banderas_de_ Bolivia/Bd_PT.png",
 				"res://src/img/data/nivel1/1er_NIVEL_Eval/Banderas_de_ Bolivia/Bd_CH.png"]
 		],
-		'respuesta':['2','1']
+		'respuesta':['2','1'],
+		'sounds':{
+			'cur':["res://src/sound/Bolivia/OR_Cur1.ogg",
+				"res://src/sound/Bolivia/OR_Cur2.ogg"],
+			'test':["res://src/sound/Bolivia/OR_preg1.ogg",
+				"res://src/sound/Bolivia/OR_preg2.ogg"]
+		}
 		},
 	'3': {
 		'titulo': 'Potosi',
@@ -59,7 +71,13 @@ var data = {
 				"res://src/img/data/nivel1/1er_NIVEL_Eval/Presentacion_de_Departamentos/La_Paz.jpg",
 				"res://src/img/data/nivel1/1er_NIVEL_Eval/Presentacion_de_Departamentos/Potosi.jpg"]
 		],
-		'respuesta':['1','3']
+		'respuesta':['1','3'],
+		'sounds':{
+			'cur':["res://src/sound/Bolivia/PT_Cur1.ogg",
+				"res://src/sound/Bolivia/PT_Cur2.ogg"],
+			'test':["res://src/sound/Bolivia/PT_preg1.ogg",
+				"res://src/sound/Bolivia/PT_preg2.ogg"]
+		}
 		},
 	'4': {
 		'titulo': 'Tarija',
@@ -79,7 +97,13 @@ var data = {
 				"res://src/img/data/nivel1/1er_NIVEL_Eval/Presentacion_de_Departamentos/La_Paz.jpg",
 				"res://src/img/data/nivel1/1er_NIVEL_Eval/Presentacion_de_Departamentos/Tarija.jpg"]
 		],
-		'respuesta':['1','3']
+		'respuesta':['1','3'],
+		'sounds':{
+			'cur':["res://src/sound/Bolivia/TJ_Cur1.ogg",
+				"res://src/sound/Bolivia/TJ_Cur2.ogg"],
+			'test':["res://src/sound/Bolivia/TJ_preg1.ogg",
+				"res://src/sound/Bolivia/TJ_preg2.ogg"]
+		}
 		},
 	'5': {
 		'titulo': 'Chuquisaca',
@@ -99,7 +123,13 @@ var data = {
 				"res://src/img/data/nivel1/1er_NIVEL_Eval/Presentacion_de_Departamentos/Pando.jpg",
 				"res://src/img/data/nivel1/1er_NIVEL_Eval/Presentacion_de_Departamentos/Chuquisaca.jpg"]
 		],
-		'respuesta':['1','3']
+		'respuesta':['1','3'],
+		'sounds':{
+			'cur':["res://src/sound/Bolivia/CH_Cur1.ogg",
+				"res://src/sound/Bolivia/CH_Cur2.ogg"],
+			'test':["res://src/sound/Bolivia/CH_preg1.ogg",
+				"res://src/sound/Bolivia/CH_preg2.ogg"]
+		}
 		},
 	'6': {
 		'titulo': 'Cochabamba',
@@ -119,7 +149,13 @@ var data = {
 				"res://src/img/data/nivel1/1er_NIVEL_Eval/Banderas_de_ Bolivia/Bd_OR.png",
 				"res://src/img/data/nivel1/1er_NIVEL_Eval/Banderas_de_ Bolivia/Bd_CB.png"]
 		],
-		'respuesta':['2','3']
+		'respuesta':['2','3'],
+		'sounds':{
+			'cur':["res://src/sound/Bolivia/CB_Cur1.ogg",
+				"res://src/sound/Bolivia/CB_Cur2.ogg"],
+			'test':["res://src/sound/Bolivia/CB_preg1.ogg",
+				"res://src/sound/Bolivia/CB_preg2.ogg"]
+		}
 		},
 	'7': {
 		'titulo': 'Beni',
@@ -139,7 +175,13 @@ var data = {
 				"res://src/img/data/nivel1/SC2.png",
 				"res://src/img/data/nivel1/TJ1.png"]
 		],
-		'respuesta':['1','1']
+		'respuesta':['1','1'],
+		'sounds':{
+			'cur':["res://src/sound/Bolivia/BE_Cur1.ogg",
+				"res://src/sound/Bolivia/BE_Cur2.ogg"],
+			'test':["res://src/sound/Bolivia/BE_preg1.ogg",
+				"res://src/sound/Bolivia/BE_preg2.ogg"]
+		}
 		},
 	'8': {
 		'titulo': 'Santa Cruz',
@@ -159,7 +201,13 @@ var data = {
 				"res://src/img/data/nivel1/SC2.png",
 				"res://src/img/data/nivel1/BE2.png"]
 		],
-		'respuesta':['1','2']
+		'respuesta':['1','2'],
+		'sounds':{
+			'cur':["res://src/sound/Bolivia/SC_Cur1.ogg",
+				"res://src/sound/Bolivia/SC_Cur2.ogg"],
+			'test':["res://src/sound/Bolivia/SC_preg1.ogg",
+				"res://src/sound/Bolivia/SC_preg2.ogg"]
+		}
 		},
 	'9': {
 		'titulo': 'Pando',
@@ -179,7 +227,13 @@ var data = {
 				"res://src/img/data/nivel1/1er_NIVEL_Eval/Presentacion_de_Departamentos/La_Paz.jpg",
 				"res://src/img/data/nivel1/1er_NIVEL_Eval/Presentacion_de_Departamentos/Pando.jpg"]
 		],
-		'respuesta':['1','3']
+		'respuesta':['1','3'],
+		'sounds':{
+			'cur':["res://src/sound/Bolivia/PD_Cur1.ogg",
+				"res://src/sound/Bolivia/PD_Cur2.ogg"],
+			'test':["res://src/sound/Bolivia/PD_preg1.ogg",
+				"res://src/sound/Bolivia/PD_preg2.ogg"]
+		}
 		}
 	}
 onready var timer = get_node("Timer")	
@@ -280,7 +334,7 @@ func mostrarDialog(depto):
 	evaluacion.append(question)
 	
 	pieza.get_node("BodyNinePatchRect/ImgRef").set_texture(textura)
-
+	pieza.get_node("curiosidadSound").stream = load(data[depto]['sounds']['cur'][nroDato])
 	#para que se muestre sobre todo
 	get_parent().add_child(pieza)
 	get_parent().box = true
@@ -310,7 +364,8 @@ func mostrar_test():
 		test.get_node("NinePatchRect/opt2/img").set_texture(load(data[Q[0]]['imagenes'][Q[1]][1]))
 		#opcion3
 		test.get_node("NinePatchRect/opt3/img").set_texture(load(data[Q[0]]['imagenes'][Q[1]][2]))
-		
+		#audio
+		test.get_node("AudioTest").stream = load(data[Q[0]]['sounds']['test'][Q[1]])
 		get_parent().add_child(test)
 		var lugar = Vector2(640,410)
 		test.set_global_position(lugar)	

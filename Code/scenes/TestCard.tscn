@@ -5,21 +5,21 @@
 [ext_resource path="res://scripts/TestCard.gd" type="Script" id=3]
 [ext_resource path="res://scenes/BodyAnimationPlayer.tscn" type="PackedScene" id=4]
 
-[sub_resource type="DynamicFontData" id=4]
+[sub_resource type="DynamicFontData" id=1]
 font_path = "res://src/fonts/Kid Games.ttf"
 
-[sub_resource type="DynamicFont" id=5]
-size = 41
-font_data = SubResource( 4 )
-
-[sub_resource type="DynamicFontData" id=1]
-font_path = "res://src/fonts/KOMTXTT_.ttf"
-
 [sub_resource type="DynamicFont" id=2]
-size = 37
+size = 41
 font_data = SubResource( 1 )
 
-[sub_resource type="GradientTexture" id=3]
+[sub_resource type="DynamicFontData" id=3]
+font_path = "res://src/fonts/KOMTXTT_.ttf"
+
+[sub_resource type="DynamicFont" id=4]
+size = 37
+font_data = SubResource( 3 )
+
+[sub_resource type="GradientTexture" id=5]
 
 [node name="TestCard" type="Control"]
 anchor_right = 1.0
@@ -59,7 +59,7 @@ anchor_bottom = 1.0
 margin_left = 285.0
 margin_top = -78.0
 margin_right = -252.0
-custom_fonts/font = SubResource( 5 )
+custom_fonts/font = SubResource( 2 )
 custom_colors/font_color = Color( 0.831373, 0.980392, 0.839216, 1 )
 custom_colors/font_outline_modulate = Color( 0.694118, 0.0392157, 0.0392157, 1 )
 custom_colors/font_color_shadow = Color( 0.00784314, 0.435294, 0.101961, 1 )
@@ -86,10 +86,11 @@ __meta__ = {
 margin_right = 937.0
 margin_bottom = 135.0
 size_flags_vertical = 5
-custom_fonts/font = SubResource( 2 )
+custom_fonts/font = SubResource( 4 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "aqui va la pregunta mamalona esperemos que no falle nada en la presentacion, eso si que seria bastante sad xc"
 autowrap = true
+percent_visible = 0.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -109,7 +110,7 @@ __meta__ = {
 [node name="img" type="NinePatchRect" parent="NinePatchRect/opt1"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-texture = SubResource( 3 )
+texture = SubResource( 5 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -167,7 +168,7 @@ margin_left = 37.0
 margin_top = 33.0
 margin_right = 341.0
 margin_bottom = 78.0
-custom_fonts/font = SubResource( 5 )
+custom_fonts/font = SubResource( 2 )
 custom_colors/font_color_shadow = Color( 0.00784314, 0.435294, 0.101961, 1 )
 custom_constants/shadow_offset_x = 1
 custom_constants/line_spacing = 1
@@ -176,6 +177,9 @@ text = "EVALUACIÓN"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="AudioTest" type="AudioStreamPlayer" parent="."]
+autoplay = true
 [connection signal="pressed" from="NinePatchRect/opt1" to="." method="_on_opt1_pressed"]
 [connection signal="pressed" from="NinePatchRect/opt2" to="." method="_on_opt2_pressed"]
 [connection signal="pressed" from="NinePatchRect/opt3" to="." method="_on_opt3_pressed"]

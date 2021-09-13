@@ -17,12 +17,15 @@ func _ready():
 
 
 func _on_Play_pressed():
-	get_tree().change_scene("res://scenes/Mesa.tscn")
+	get_tree().change_scene("res://Menus/Seleccion_nivel.tscn")
 
 
-func _on_Settings_pressed():
-	pass # Replace with function body.
+func _on_Creditos_pressed():
+	get_tree().change_scene("res://Menus/Creditos.tscn")
 
 
 func _on_Salir_pressed():
 	get_tree().quit()
+
+
+

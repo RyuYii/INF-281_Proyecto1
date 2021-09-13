@@ -40,3 +40,14 @@ func _ready():
 		lugar = lugar + area.position
 		pieza.set_global_position(lugar)
 		
+
+
+
+
+
+func _on_Volver_Selec_Nivel_pressed():
+		get_tree().change_scene("res://Menus/Seleccion_nivel.tscn")
+
+
+func _on_Volver_Menu_pressed():
+		get_tree().change_scene("res://Menus/MainMenu.tscn")

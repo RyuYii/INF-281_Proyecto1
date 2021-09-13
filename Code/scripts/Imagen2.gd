@@ -19,7 +19,13 @@ var data = {
 				"res://src/img/data/nivel3/Q/image27.png",
 				"res://src/img/data/nivel3/Q/image7.png"]
 		],
-		'respuesta':['1','2']
+		'respuesta':['1','2'],
+		'sounds':{
+			'cur':["res://src/sound/Sudamerica/GU_F_Cur1.ogg",
+				"res://src/sound/Sudamerica/GU_F_Cur2.ogg"],
+			'test':["res://src/sound/Sudamerica/GU_F_preg1.ogg",
+				"res://src/sound/Sudamerica/GU_F_preg2.ogg"]
+		}
 		},
 	'2': {
 		'titulo': 'Surinam',
@@ -44,13 +50,19 @@ var data = {
 		'respuesta':[
 				'1',
 				'2'
-			]
+			],
+		'sounds':{
+			'cur':["res://src/sound/Sudamerica/SU_Cur1.ogg",
+				"res://src/sound/Sudamerica/SU_Cur2.ogg"],
+			'test':["res://src/sound/Sudamerica/SU_preg1.ogg",
+				"res://src/sound/Sudamerica/SU_preg2.ogg"]
+		}
 		},
 	'3': {
-		'titulo': 'Guyana',
+		'titulo': 'Guayana',
 		'datos': [
 			['El escudo de las Guayanas, también llamado “el macizo guayanés”, es una de las formaciones rocosas más antiguas del mundo, con más de 1.700 millones de años. Guyana comparte este escudo con Venezuela, Brasil y Surinam. Es uno de los atractivos turísticos más codiciados del país.',
-				"res://src/img/data/nivel3/GUA1.jpg"],
+				"res://src/img/data/nivel3/GUA1.png"],
 			['En Guyana se encuentra uno de los ríos más extensos del mundo, el río Esequibo con 1.014 km de largo. Este río tiene uno de los estuarios más grandes del continente, siendo superado solo por el río de la Plata.',
 				"res://src/img/data/nivel3/GUA2.jpg"]
 				],
@@ -69,7 +81,13 @@ var data = {
 		'respuesta':[
 				'1',
 				'1'
-			]
+			],
+		'sounds':{
+			'cur':["res://src/sound/Sudamerica/GUA_Cur1.ogg",
+				"res://src/sound/Sudamerica/GUA_Cur2.ogg"],
+			'test':["res://src/sound/Sudamerica/GUA_preg1.ogg",
+				"res://src/sound/Sudamerica/GUA_preg2.ogg"]
+		}
 		},
 	'4': {
 		'titulo': 'Venezuela',
@@ -94,7 +112,13 @@ var data = {
 		'respuesta':[
 				'2',
 				'1'
-			]
+			],
+		'sounds':{
+			'cur':["res://src/sound/Sudamerica/VE_Cur1.ogg",
+				"res://src/sound/Sudamerica/VE_Cur2.ogg"],
+			'test':["res://src/sound/Sudamerica/VE_preg1.ogg",
+				"res://src/sound/Sudamerica/VE_preg2.ogg"]
+		}
 		},
 	'5': {
 		'titulo': 'Colombia',
@@ -119,7 +143,13 @@ var data = {
 		'respuesta':[
 				'2',
 				'3'
-			]
+			],
+		'sounds':{
+			'cur':["res://src/sound/Sudamerica/CO_Cur1.ogg",
+				"res://src/sound/Sudamerica/CO_Cur2.ogg"],
+			'test':["res://src/sound/Sudamerica/CO_preg1.ogg",
+				"res://src/sound/Sudamerica/CO_preg2.ogg"]
+		}
 		},
 	'6': {
 		'titulo': 'Ecuador',
@@ -144,7 +174,13 @@ var data = {
 		'respuesta':[
 				'1',
 				'2'
-			]
+			],
+		'sounds':{
+			'cur':["res://src/sound/Sudamerica/EC_Cur1.ogg",
+				"res://src/sound/Sudamerica/EC_Cur2.ogg"],
+			'test':["res://src/sound/Sudamerica/EC_preg1.ogg",
+				"res://src/sound/Sudamerica/EC_preg2.ogg"]
+		}
 		},
 	'7': {
 		'titulo': 'Peru',
@@ -169,7 +205,13 @@ var data = {
 		'respuesta':[
 				'1',
 				'3'
-			]
+			],
+		'sounds':{
+			'cur':["res://src/sound/Sudamerica/PE_Cur1.ogg",
+				"res://src/sound/Sudamerica/PE_Cur2.ogg"],
+			'test':["res://src/sound/Sudamerica/PE_preg1.ogg",
+				"res://src/sound/Sudamerica/PE_preg2.ogg"]
+		}
 		},
 	'8': {
 		'titulo': 'Brasil',
@@ -194,7 +236,13 @@ var data = {
 		'respuesta':[
 				'1',
 				'1'
-			]
+			],
+		'sounds':{
+			'cur':["res://src/sound/Sudamerica/BR_Cur1.ogg",
+				"res://src/sound/Sudamerica/BR_Cur2.ogg"],
+			'test':["res://src/sound/Sudamerica/BR_preg1.ogg",
+				"res://src/sound/Sudamerica/BR_preg2.ogg"]
+		}
 		},
 	'9': {
 		'titulo': 'Bolivia',
@@ -219,7 +267,13 @@ var data = {
 		'respuesta':[
 				'3',
 				'1'
-			]
+			],
+		'sounds':{
+			'cur':["res://src/sound/Sudamerica/BO_Cur1.ogg",
+				"res://src/sound/Sudamerica/BO_Cur2.ogg"],
+			'test':["res://src/sound/Sudamerica/BO_preg1.ogg",
+				"res://src/sound/Sudamerica/BO_preg2.ogg"]
+		}
 		},
 	'10': {
 		'titulo': 'Paraguay',
@@ -244,7 +298,13 @@ var data = {
 		'respuesta':[
 				'3',
 				'2'
-			]
+			],
+		'sounds':{
+			'cur':["res://src/sound/Sudamerica/PA_Cur1.ogg",
+				"res://src/sound/Sudamerica/PA_Cur2.ogg"],
+			'test':["res://src/sound/Sudamerica/PA_preg1.ogg",
+				"res://src/sound/Sudamerica/PA_preg2.ogg"]
+		}
 		},
 	'11': {
 		'titulo': 'Uruguay',
@@ -269,7 +329,13 @@ var data = {
 		'respuesta':[
 				'1',
 				'3'
-			]
+			],
+		'sounds':{
+			'cur':["res://src/sound/Sudamerica/UR_Cur1.ogg",
+				"res://src/sound/Sudamerica/UR_Cur2.ogg"],
+			'test':["res://src/sound/Sudamerica/UR_preg1.ogg",
+				"res://src/sound/Sudamerica/UR_preg2.ogg"]
+		}
 		},
 	'12': {
 		'titulo': 'Argentina',
@@ -294,7 +360,13 @@ var data = {
 		'respuesta':[
 				'1',
 				'1'
-			]
+			],
+		'sounds':{
+			'cur':["res://src/sound/Sudamerica/AR_Cur1.ogg",
+				"res://src/sound/Sudamerica/AR_Cur2.ogg"],
+			'test':["res://src/sound/Sudamerica/AR_preg1.ogg",
+				"res://src/sound/Sudamerica/AR_preg2.ogg"]
+		}
 		},
 	'13': {
 		'titulo': 'Chile',
@@ -319,7 +391,13 @@ var data = {
 		'respuesta':[
 				'1',
 				'3'
-			]
+			],
+		'sounds':{
+			'cur':["res://src/sound/Sudamerica/CHi_Cur1.ogg",
+				"res://src/sound/Sudamerica/CHi_Cur2.ogg"],
+			'test':["res://src/sound/Sudamerica/CHi_preg1.ogg",
+				"res://src/sound/Sudamerica/CHi_preg2.ogg"]
+		}
 		}
 	}
 onready var timer = get_node("Timer")	
@@ -420,7 +498,8 @@ func mostrarDialog(depto):
 	evaluacion.append(question)
 	
 	pieza.get_node("BodyNinePatchRect/ImgRef").set_texture(textura)
-
+	pieza.get_node("curiosidadSound").stream = load(data[depto]['sounds']['cur'][nroDato])
+	
 	#para que se muestre sobre todo
 	get_parent().add_child(pieza)
 	get_parent().box = true

@@ -1,0 +1,169 @@
+[gd_scene load_steps=16 format=2]
+
+[ext_resource path="res://GUI/block_UI_blank@2x.png" type="Texture" id=1]
+[ext_resource path="res://src/img/fondo menu.jpg" type="Texture" id=2]
+[ext_resource path="res://src/fonts/Armstrong.otf" type="DynamicFontData" id=3]
+[ext_resource path="res://src/fonts/Balbaleo.otf" type="DynamicFontData" id=4]
+[ext_resource path="res://src/fonts/Professor Marbles 1_PersonalUseOnly.ttf" type="DynamicFontData" id=5]
+[ext_resource path="res://Menus/Seleccion_nivel.gd" type="Script" id=6]
+[ext_resource path="res://GUI/block_UI_six.png" type="Texture" id=7]
+[ext_resource path="res://Menus/logo.tscn" type="PackedScene" id=8]
+[ext_resource path="res://src/img/fondo.png" type="Texture" id=9]
+[ext_resource path="res://src/img/Image2/fondo.png" type="Texture" id=10]
+[ext_resource path="res://Menus/nivel.tscn" type="PackedScene" id=11]
+
+[sub_resource type="DynamicFont" id=1]
+size = 100
+font_data = ExtResource( 5 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 100
+font_data = ExtResource( 5 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 80
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 30
+font_data = ExtResource( 4 )
+
+[node name="Seleccion_nivel" type="CanvasLayer"]
+script = ExtResource( 6 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+visible = false
+margin_right = 1277.0
+margin_bottom = 819.0
+color = Color( 0.933333, 0.737255, 0.0745098, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 652.321, 407.383 )
+scale = Vector2( 1.83286, 1.87785 )
+texture = ExtResource( 2 )
+
+[node name="GridContainer2" type="GridContainer" parent="."]
+visible = false
+margin_left = 149.79
+margin_top = 647.003
+margin_right = 1349.79
+margin_bottom = 1444.01
+custom_constants/hseparation = 400
+columns = 4
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Nivel_1" type="TextureButton" parent="GridContainer2"]
+margin_right = 128.0
+margin_bottom = 128.0
+texture_normal = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="GridContainer2/Nivel_1"]
+margin_left = 33.9795
+margin_right = 80.9795
+margin_bottom = 134.0
+custom_fonts/font = SubResource( 1 )
+text = "1"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Nivel_2" type="TextureButton" parent="GridContainer2"]
+margin_left = 528.0
+margin_right = 656.0
+margin_bottom = 128.0
+texture_normal = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="GridContainer2/Nivel_2"]
+margin_left = 33.9795
+margin_right = 90.9795
+margin_bottom = 134.0
+custom_fonts/font = SubResource( 2 )
+text = "2"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Titulo" type="Label" parent="."]
+margin_left = 197.19
+margin_top = 174.434
+margin_right = 1117.19
+margin_bottom = 279.434
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 4
+custom_constants/shadow_offset_y = 10
+text = "Selección de nivel"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="logo" parent="." instance=ExtResource( 8 )]
+margin_left = -375.735
+margin_top = -2.24493
+margin_right = 372.265
+margin_bottom = 230.755
+
+[node name="TextureButton" type="TextureButton" parent="."]
+margin_left = 856.978
+margin_top = 681.798
+margin_right = 1240.98
+margin_bottom = 745.798
+texture_normal = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="TextureButton"]
+margin_left = 36.7697
+margin_top = 8.48529
+margin_right = 353.77
+margin_bottom = 51.4853
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0.27451, 0.184314, 0.0705882, 1 )
+text = "Volver al Menú Principal"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureButton2" parent="." instance=ExtResource( 11 )]
+margin_left = 192.293
+margin_top = 272.18
+margin_right = 598.293
+margin_bottom = 626.18
+
+[node name="NinePatchRect" parent="TextureButton2" index="0"]
+texture = ExtResource( 9 )
+
+[node name="TextureButton3" parent="." instance=ExtResource( 11 )]
+margin_left = 693.024
+margin_top = 276.398
+margin_right = 1099.02
+margin_bottom = 630.398
+
+[node name="NinePatchRect" parent="TextureButton3" index="0"]
+texture = ExtResource( 10 )
+
+[node name="Label" parent="TextureButton3/NinePatchRect2" index="0"]
+text = "2"
+[connection signal="pressed" from="GridContainer2/Nivel_1" to="." method="_on_Nivel_1_pressed"]
+[connection signal="pressed" from="GridContainer2/Nivel_2" to="." method="_on_Nivel_2_pressed"]
+[connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]
+[connection signal="pressed" from="TextureButton2" to="." method="_on_TextureButton2_pressed"]
+[connection signal="pressed" from="TextureButton3" to="." method="_on_TextureButton3_pressed"]
+
+[editable path="TextureButton2"]
+
+[editable path="TextureButton3"]
