@@ -32,10 +32,10 @@ texture = ExtResource( 6 )
 position = Vector2( 510.242, 5.90418 )
 
 [node name="Area" type="Control" parent="."]
-margin_left = 279.31
-margin_top = 196.819
-margin_right = 366.31
-margin_bottom = 402.819
+margin_left = 315.31
+margin_top = 212.819
+margin_right = 402.31
+margin_bottom = 418.819
 __meta__ = {
 "_edit_use_anchors_": false
 }

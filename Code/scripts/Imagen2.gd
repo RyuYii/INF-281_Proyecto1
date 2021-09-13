@@ -602,9 +602,9 @@ func _physics_process(_delta):
 
 func resultado_final():
 	if nota_nivel >= 2:
-		print('aprobado')#nivel
-		if level_int >= Global.current_level:
-			Global.current_level += 1
+		print('aprobado')
+		#pasar a escena final
+		get_tree().change_scene("res://Menus/Fin_Juego.tscn")
 			
 		
 	else:
