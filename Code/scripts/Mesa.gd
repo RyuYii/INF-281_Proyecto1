@@ -29,7 +29,7 @@ func _ready():
 	
 	for i in range(1, numero_piezas + 1):
 		#Instanciamos la pieza.
-		var pieza = preload("res://scenes/pieza1.tscn").instance()
+		var pieza = preload("res://scenes/Pieza1.tscn").instance()
 		#Le ponemos nombre.
 		pieza.ruta = "res://src/img/"
 		pieza.set_name("pieza" + str(i))

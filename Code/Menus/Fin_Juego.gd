@@ -8,8 +8,9 @@ extends CanvasLayer
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
-
+	#Le agregamos musica al Menú Principa
+	SonidoM.get_node("MusicM").stream = load("res://src/Audios_Menu/audio_fin.ogg")
+	SonidoM.get_node("MusicM").play()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):

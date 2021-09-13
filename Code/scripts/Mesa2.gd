@@ -35,9 +35,9 @@ func _ready():
 	
 	for i in range(1, numero_piezas + 1):
 		#Instanciamos la pieza.
-		var pieza = preload("res://scenes/pieza1.tscn").instance()
+		var pieza = preload("res://scenes/Pieza1.tscn").instance()
 		#Le ponemos nombre.
-		pieza.ruta = "res://src/img/image2/"
+		pieza.ruta = "res://src/img/Image2/"
 		pieza.set_name("pieza" + str(i))
 		pieza.scale -= Vector2(escalas[i][0],escalas[i][1])
 		#Añadimos la pieza al nodo raíz.

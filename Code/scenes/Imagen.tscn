@@ -121,4 +121,5 @@ position = Vector2( 0, -1.45407 )
 
 [node name="Timer" type="Timer" parent="."]
 one_shot = true
+
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

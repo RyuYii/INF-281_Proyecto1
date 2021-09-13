@@ -89,6 +89,6 @@ __meta__ = {
 }
 
 [node name="Aplausos" type="AudioStreamPlayer" parent="."]
-bus = "SFX"
+
 [connection signal="pressed" from="VBoxContainer/Volver_Selec_Nivel" to="." method="_on_Volver_Selec_Nivel_pressed"]
 [connection signal="pressed" from="VBoxContainer/Volver_Menu" to="." method="_on_Volver_Menu_pressed"]
