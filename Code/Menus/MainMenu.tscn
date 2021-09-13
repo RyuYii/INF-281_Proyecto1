@@ -144,6 +144,6 @@ margin_top = 2.11893
 margin_right = 71.7557
 margin_bottom = 235.119
 [connection signal="pressed" from="VBoxContainer2/Play" to="." method="_on_Play_pressed"]
-[connection signal="pressed" from="VBoxContainer2/Creditos" to="." method="_on_Settings_pressed"]
 [connection signal="pressed" from="VBoxContainer2/Creditos" to="." method="_on_Creditos_pressed"]
+[connection signal="pressed" from="VBoxContainer2/Creditos" to="." method="_on_Settings_pressed"]
 [connection signal="pressed" from="VBoxContainer2/Salir" to="." method="_on_Salir_pressed"]

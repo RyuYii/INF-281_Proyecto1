@@ -19,6 +19,7 @@
 
 [node name="Imagen2" type="Node2D"]
 script = ExtResource( 16 )
+level_int = 2
 
 [node name="fondo" type="Sprite" parent="."]
 position = Vector2( 400.707, 401.775 )

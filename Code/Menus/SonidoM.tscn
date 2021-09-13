@@ -1,0 +1,6 @@
+[gd_scene format=2]
+
+[node name="SonidoM" type="Node2D"]
+
+[node name="MusicM" type="AudioStreamPlayer" parent="."]
+volume_db = -15.563
