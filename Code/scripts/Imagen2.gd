@@ -1,5 +1,8 @@
 
 extends Node2D
+
+export var level_int = 1
+
 var data = {
 	'1': {
 		'titulo': 'Guayana Francesa',
@@ -440,6 +443,10 @@ func _ready():
 	mostrar = true
 	var derecha_abajo = Vector2(col_pos_ini.x, col_pos_ini.y)
 	
+	#Le agregamos musica la nivel
+	SonidoM.get_node("MusicM").stream = load("res://src/Audios/sonido_ambiente_de_los_niveles.ogg")
+	SonidoM.get_node("MusicM").play()
+	
 	# warning-ignore:unused_variable
 	for i in range(0, piezas.x * piezas.y):
 		lugar.append(derecha_abajo)
@@ -584,7 +591,10 @@ func _physics_process(_delta):
 
 func resultado_final():
 	if nota_nivel >= 2:
-		print('aprobado')
+		print('aprobado')#nivel
+		if level_int >= Global.current_level:
+			Global.current_level += 1
+		
 	else:
 		print('reprobado')
 

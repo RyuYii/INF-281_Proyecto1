@@ -26,6 +26,8 @@ func resultado(opcion):
 	get_node("Imagen2").calcular_resultado(opcion)
 	
 func _ready():
+	
+	
 	#Generamos aleatoridad.
 	randomize()
 	var area = get_node("Area").get_rect()

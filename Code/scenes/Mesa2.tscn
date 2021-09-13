@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://scenes/Imagen2.tscn" type="PackedScene" id=1]
 [ext_resource path="res://src/img/borders/title.png" type="Texture" id=2]
 [ext_resource path="res://scripts/Mesa2.gd" type="Script" id=3]
 [ext_resource path="res://GUI/block_UI_six.png" type="Texture" id=4]
 [ext_resource path="res://src/fonts/Balbaleo.otf" type="DynamicFontData" id=5]
+[ext_resource path="res://GUI/back.png" type="Texture" id=6]
 
 [sub_resource type="DynamicFont" id=1]
 size = 30
@@ -21,6 +22,11 @@ script = ExtResource( 3 )
 position = Vector2( 642.729, 410.259 )
 scale = Vector2( 0.533423, 0.44165 )
 texture = ExtResource( 2 )
+
+[node name="back" type="Sprite" parent="."]
+position = Vector2( 641.211, 410.696 )
+scale = Vector2( 3.1135, 3.13574 )
+texture = ExtResource( 6 )
 
 [node name="Imagen2" parent="." instance=ExtResource( 1 )]
 position = Vector2( 510.242, 5.90418 )

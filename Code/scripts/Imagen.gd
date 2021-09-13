@@ -1,5 +1,8 @@
 
 extends Node2D
+
+export var level_int = 1
+
 var data = {
 	'1': {
 		'titulo': 'La Paz',
@@ -276,6 +279,10 @@ func _ready():
 	mostrar = true
 	var derecha_abajo = Vector2(col_pos_ini.x, col_pos_ini.y)
 	
+	#Le agregamos musica al nivel
+	SonidoM.get_node("MusicM").stream = load("res://src/Audios/sonido_ambiente_de_los_niveles.ogg")
+	SonidoM.get_node("MusicM").play()
+	
 	# warning-ignore:unused_variable
 	for i in range(0, piezas.x * piezas.y):
 		lugar.append(derecha_abajo)
@@ -317,7 +324,7 @@ func _desencaja(_nodo):
 	esta_dentro = false
 
 func mostrarDialog(depto):
-	
+		
 	var pieza = preload("res://scenes/Dialog_box.tscn").instance()
 
 	#obtenemos las variables que modificaremos
@@ -421,8 +428,17 @@ func _physics_process(_delta):
 func resultado_final():
 	if nota_nivel >= 2:
 		print('aprobado')
+		#nivel
+		if level_int >= Global.current_level:
+			Global.current_level += 1
+			get_tree().change_scene("res://scenes/Mesa2.tscn")
+			
 	else:
 		print('reprobado')
+		#if level_int >= Global.current_level:
+		Global.current_level = 1
+		get_tree().reload_current_scene()
+			
 	
 func _on_Timer_timeout():
 	if counter == 4:
