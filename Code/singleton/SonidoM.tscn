@@ -3,4 +3,5 @@
 [node name="SonidoM" type="Node2D"]
 
 [node name="MusicM" type="AudioStreamPlayer" parent="."]
-volume_db = -15.563
+volume_db = -21.308
+bus = "AudioM"

@@ -7,12 +7,12 @@ var data = {
 	'1': {
 		'titulo': 'Guayana Francesa',
 		'datos': [
-			['Las playas, No esperes playas de arena blanca y aguas turquesas en la Guayana francesa; sino, más bien, playas de arena negra y aguas marrones de aspecto turbulento. El motivo es que, en las costas, desembocan tantos ríos que el agua del mar está revuelta y llena de sedimentos.',
+			['Las playas, No esperes playas de arena blanca y aguas turquesas en la Guayana Francesa; sino, más bien, playas de arena negra y aguas marrones de aspecto turbulento. El motivo es que, en las costas, desembocan tantos ríos que el agua del mar está revuelta y llena de sedimentos.',
 				"res://src/img/data/nivel3/GUF1.jpg"],
-			['El centro espacial de la Guayana francesa, Desde el centro espacial de Kourou se lanzan el 80% de los satélites que orbitan la Tierra. El hecho de ser una zona libre de ciclones y movimientos sísmicos facilita este hecho.',
+			['El centro espacial de la Guayana Francesa, Desde el centro espacial de Kourou se lanzan el 80% de los satélites que orbitan la Tierra. El hecho de ser una zona libre de ciclones y movimientos sísmicos facilita este hecho.',
 				"res://src/img/data/nivel3/GUF2.jpg"]
 				],
-		'preguntas':['Encuentra las playas de Guyana francesa.',
+		'preguntas':['Encuentra las playas de Guayana Francesa.',
 			'¿Qué país tiene el centro espacial Kourou?'],
 		'imagenes':[
 			[	"res://src/img/data/nivel3/Q/image5.png",
@@ -39,7 +39,7 @@ var data = {
 				"res://src/img/data/nivel3/SU2.jpg"]
 				],
 		'preguntas':[
-				'Elige ¿cual es la ciudad de Paramaribo?',
+				'Elige ¿cuál es la ciudad de Paramaribo?',
 				'¿Cuál es el país más chico de sudamérica?'
 			],
 		'imagenes':[
@@ -62,7 +62,7 @@ var data = {
 		}
 		},
 	'3': {
-		'titulo': 'Guayana',
+		'titulo': 'Guyana',
 		'datos': [
 			['El escudo de las Guayanas, también llamado “el macizo guayanés”, es una de las formaciones rocosas más antiguas del mundo, con más de 1.700 millones de años. Guyana comparte este escudo con Venezuela, Brasil y Surinam. Es uno de los atractivos turísticos más codiciados del país.',
 				"res://src/img/data/nivel3/GUA1.png"],
@@ -95,9 +95,9 @@ var data = {
 	'4': {
 		'titulo': 'Venezuela',
 		'datos': [
-			['El salto del ángel, la cascada ininterrumpida más alta del mundo, se encuentra en Venezuela. Con una altura de 3,212 pies es aproximadamente 15 veces más alto que las Cataratas del Niágara. Se encuentra en el mítico Parque Natural Canaima, donde se encuentran especies únicas por su clima tan especial.',
+			['El salto del ángel, la cascada ininterrumpida más alta del mundo, se encuentra en Venezuela. Con una altura de 3.212 pies es aproximadamente 15 veces más alto que las Cataratas del Niágara. Se encuentra en el mítico Parque Natural Canaima, donde se encuentran especies únicas por su clima tan especial.',
 				"res://src/img/data/nivel3/VE1.jpg"],
-			['La Arepa, el mejor desayuno que podrás comer, Los venezolanos comen arepas por lo menos una vez a la semana. La verdad es que la gente en Venezuela come arepas no sólo para el desayuno, sino para el almuerzo, la cena y el aperitivo también.',
+			['La Arepa, el mejor desayuno que podrás comer, Los venezolanos comen arepas por lo menos una vez a la semana. La verdad es que la gente en Venezuela come arepas no solo para el desayuno, sino para el almuerzo, la cena y el aperitivo también.',
 				"res://src/img/data/nivel3/VE2.jpg"]
 				],
 		'preguntas':[
@@ -157,7 +157,7 @@ var data = {
 	'6': {
 		'titulo': 'Ecuador',
 		'datos': [
-			['Chimborazo es uno de los volcanes más famosos y el punto más alto de Ecuador con 6310 msnm, que además es el punto más cercano al Sol de la Tierra.',
+			['Chimborazo es uno de los volcanes más famosos y el punto más alto de Ecuador con 6.310 msnm, que además es el punto más cercano al Sol de la Tierra.',
 				"res://src/img/data/nivel3/EC1.jpg"],
 			['En Ecuador se come Cuy, una de las comidas más exóticas de América Latina. Te sorprenderá saber que es un conejillo de indias o cobaya cocinado en guiso, al palo, al horno o frito. ¿Te atreverías a probarlo?',
 				"res://src/img/data/nivel3/EC2.jpg"]
@@ -186,9 +186,9 @@ var data = {
 		}
 		},
 	'7': {
-		'titulo': 'Peru',
+		'titulo': 'Perú',
 		'datos': [
-			['Machu Picchu, o como dirían los incas, montaña vieja es uno de estos lugares. Se dice que es tan especial que fue declarado Patrimonio en 1983 y pertenece a la región de Cusco.',
+			['Machu Picchu, o como dirían los incas "montaña vieja". Se dice que es tan especial que fue declarado Patrimonio en 1983 y pertenece a la región de Cusco.',
 				"res://src/img/data/nivel3/PE1.jpg"],
 			['El Cañón de Cotahuasi de Perú, lo más seguro es que conozcas el Gran Cañón de EE.UU. y pienses que es el más profundo. Sin embargo, no es así, el Cañón de Cotahuasi es dos veces más profundo.',
 				"res://src/img/data/nivel3/PE2.jpg"]
@@ -230,8 +230,8 @@ var data = {
 			],
 		'imagenes':[
 				["res://src/img/data/nivel3/Q/image39.png",
-				"res://src/img/data/nivel3/Q/image14.png",
-				"res://src/img/data/nivel3/Q/image15.png"],
+				"res://src/img/data/nivel3/Q/image15.png",
+				"res://src/img/data/nivel3/Q/image14.png"],
 				["res://src/img/data/nivel3/Q/image46.png",
 				"res://src/img/data/nivel3/Q/image31.png",
 				"res://src/img/data/nivel3/Q/image33.png"]
@@ -349,8 +349,8 @@ var data = {
 				"res://src/img/data/nivel3/AR2.jpg"]
 				],
 		'preguntas':[
-				'Indica cuál es el río de la plata',
-				'Indicar ¿Cuál es el tren del fin del mundo?'
+				'Indica ¿cuál es el río de la plata?',
+				'Indicar ¿cuál es el tren del fin del mundo?'
 			],
 		'imagenes':[
 				["res://src/img/data/nivel3/Q/image31.png",
@@ -376,7 +376,7 @@ var data = {
 		'datos': [
 			['Chile tiene la piscina más larga del mundo, ubicada en la ciudad costera de Algarrobo, que equivale a la longitud de 20 piscinas olímpicas convirtiéndola en un Récord Guinness a nivel mundial.',
 				"res://src/img/data/nivel3/CHI1.jpg"],
-			['La momia más antigua del mundo fue encontrada en Chile. Conocida como la momia Chinchorro, es un resto momificado de una persona de una antigua tribu Chinchorro del Desierto de Atacama, que data entre los años 5050 y 3000 AC, lo que significa que la gente de Atacama, ¡fueron momificados hasta 2.000 años antes que los egipcios!',
+			['La momia más antigua del mundo fue encontrada en Chile. Conocida como la momia Chinchorro, es un resto momificado de una persona de una antigua tribu Chinchorro del Desierto de Atacama, que data entre los años 5.050 y 3.000 AC, lo que significa que la gente de Atacama, ¡fueron momificados hasta 2.000 años antes que los egipcios!',
 				"res://src/img/data/nivel3/CHI2.jpg"]
 				],
 		'preguntas':[
@@ -444,7 +444,7 @@ func _ready():
 	var derecha_abajo = Vector2(col_pos_ini.x, col_pos_ini.y)
 	
 	#Le agregamos musica la nivel
-	SonidoM.get_node("MusicM").stream = load("res://src/Audios/sonido_ambiente_de_los_niveles.ogg")
+	SonidoM.get_node("MusicM").stream = load("res://src/Audios_Menu/sonido_ambiente_de_los_niveles.ogg")
 	SonidoM.get_node("MusicM").play()
 	
 	# warning-ignore:unused_variable
@@ -537,6 +537,8 @@ func mostrar_test():
 		#opcion3
 		test.get_node("NinePatchRect/opt3/img").set_texture(load(data[Q[0]]['imagenes'][Q[1]][2]))
 		
+		#audio
+		test.get_node("AudioTest").stream = load(data[Q[0]]['sounds']['test'][Q[1]])
 		get_parent().add_child(test)
 		var lugar = Vector2(640,410)
 		test.set_global_position(lugar)	
@@ -551,12 +553,21 @@ func calcular_resultado(opcion):
 	var test = preload("res://scenes/evaluacion/Resultado.tscn").instance()
 	if opcion == elemento:
 		print('correcto')
+		#sonido bien
+		SonidoM.get_node("MusicM").stream = load("res://src/Audios_Menu/correcto.ogg")
+		SonidoM.get_node("MusicM").play()
+		
 		get_parent().add_child(test)
 		nota_nivel+=1
+		
 		#var lugar = Vector2(640,410)
 		#test.set_global_position(lugar)	
 	else:
 		print('incorrecto')
+		#sonido incorrecto
+		SonidoM.get_node("MusicM").stream = load("res://src/Audios_Menu/error.ogg")
+		SonidoM.get_node("MusicM").play()
+		
 		test.get_node("Sprite").texture = load("res://src/img/evaluacion/mal.png")
 		get_parent().add_child(test)
 		#var lugar = Vector2(640,410)
@@ -594,9 +605,12 @@ func resultado_final():
 		print('aprobado')#nivel
 		if level_int >= Global.current_level:
 			Global.current_level += 1
+			
 		
 	else:
 		print('reprobado')
+		Global.current_level = 2
+		get_tree().reload_current_scene()
 
 func _on_Timer_timeout():
 	if counter == 4:

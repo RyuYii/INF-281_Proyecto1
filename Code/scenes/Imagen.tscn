@@ -121,7 +121,4 @@ position = Vector2( 0, -1.45407 )
 
 [node name="Timer" type="Timer" parent="."]
 one_shot = true
-
-[node name="LP_Cur1" type="AudioStreamPlayer" parent="."]
-bus = "audios_B"
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

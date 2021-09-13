@@ -24,27 +24,27 @@ scale = Vector2( 0.533423, 0.44165 )
 texture = ExtResource( 2 )
 
 [node name="back" type="Sprite" parent="."]
-position = Vector2( 641.211, 410.696 )
-scale = Vector2( 3.1135, 3.13574 )
+position = Vector2( 641.211, 409.361 )
+scale = Vector2( 3.1135, 3.12462 )
 texture = ExtResource( 6 )
 
 [node name="Imagen2" parent="." instance=ExtResource( 1 )]
 position = Vector2( 510.242, 5.90418 )
 
 [node name="Area" type="Control" parent="."]
-margin_left = 290.535
-margin_top = 297.841
-margin_right = 377.535
-margin_bottom = 503.841
+margin_left = 279.31
+margin_top = 196.819
+margin_right = 366.31
+margin_bottom = 402.819
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
-margin_left = 90.7691
-margin_top = 608.687
-margin_right = 474.769
-margin_bottom = 740.687
+margin_left = 66.0749
+margin_top = 628.891
+margin_right = 450.075
+margin_bottom = 760.891
 __meta__ = {
 "_edit_use_anchors_": false
 }

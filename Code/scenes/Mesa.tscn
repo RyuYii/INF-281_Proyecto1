@@ -24,27 +24,27 @@ scale = Vector2( 0.530611, 0.257011 )
 texture = ExtResource( 3 )
 
 [node name="back" type="Sprite" parent="Sprite"]
-position = Vector2( -4.97089, -3.05701 )
-scale = Vector2( 5.91213, 12.5623 )
+position = Vector2( -6.19762, 1.28877 )
+scale = Vector2( 5.91852, 12.6178 )
 texture = ExtResource( 6 )
 
 [node name="Imagen" parent="." instance=ExtResource( 1 )]
 position = Vector2( 469.069, 30.7989 )
 
 [node name="Area" type="Control" parent="."]
-margin_left = 258.194
-margin_top = 276.788
-margin_right = 403.194
-margin_bottom = 556.788
+margin_left = 220.818
+margin_top = 194.028
+margin_right = 365.818
+margin_bottom = 474.028
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
-margin_left = 855.0
-margin_top = 36.3376
-margin_right = 1239.0
-margin_bottom = 174.338
+margin_left = 63.7695
+margin_top = 637.409
+margin_right = 447.77
+margin_bottom = 775.409
 custom_constants/separation = 10
 __meta__ = {
 "_edit_use_anchors_": false
@@ -87,5 +87,8 @@ text = "Volver al Menú Principal"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Aplausos" type="AudioStreamPlayer" parent="."]
+bus = "SFX"
 [connection signal="pressed" from="VBoxContainer/Volver_Selec_Nivel" to="." method="_on_Volver_Selec_Nivel_pressed"]
 [connection signal="pressed" from="VBoxContainer/Volver_Menu" to="." method="_on_Volver_Menu_pressed"]

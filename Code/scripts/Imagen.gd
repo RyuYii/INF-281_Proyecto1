@@ -57,10 +57,10 @@ var data = {
 		}
 		},
 	'3': {
-		'titulo': 'Potosi',
+		'titulo': 'Potosí',
 		'datos': [
 			['El salar de Uyuni es el mayor desierto de sal continuo y alto del mundo, con una superficie de 10.582 km².​ Está situado a unos 3.650 msnm en el suroeste de Bolivia, en la provincia de Daniel Campos, en el departamento de Potosí, dentro de la región altiplánica de la cordillera de los Andes.',
-				"res://src/img/data/nivel1/PT1.png"],
+				"res://src/img/data/nivel1/PT4.png"],
 			['La casa de la moneda. Es una entidad cultural del Estado, que tiene por finalidad rescatar, proteger, custodiar, conservar, restaurar, promover y poner en valor el Patrimonio Cultural tangible e intangible que se halla en el Repositorio, rescatando la historia y cultura de la Villa Imperial de Potosí.',
 				"res://src/img/data/nivel1/PT2.png"]
 				],
@@ -111,12 +111,12 @@ var data = {
 	'5': {
 		'titulo': 'Chuquisaca',
 		'datos': [
-			['El Pujllay es una danza típica del departamento de Chuquisaca, representa un juego o esparcimiento por la floración de los campos, donde la fiesta se inicia con la generalizada ch’alla de las sementeras y se realizan diversas ceremonias de fecundidad, esta celebración se realiza en Febrero o Marzo, y se caracteriza por su música y vestimenta típica correspondiente a la región Yamparaez.',
+			['El Pujllay es una danza típica del departamento de Chuquisaca, representa un juego o esparcimiento por la floración de los campos, donde la fiesta se inicia con la generalizada ch’alla de las sementeras y se realizan diversas ceremonias de fecundidad, esta celebración se realiza en febrero o marzo, y se caracteriza por su música y vestimenta típica correspondiente a la región Yamparáez.',
 				"res://src/img/data/nivel1/CH1.png"],
 			['El área que envuelve a Sucre es de gran importancia paleontológica. A sólo 5.5 km de la localidad de Chuquisaca se halla Cal Orcko, uno de los descubrimientos paleolíticos más significativos del mundo.',
 				"res://src/img/data/nivel1/CH2.png"]
 				],
-		'preguntas':['Danza tipica del departamento de Chuquisaca',
+		'preguntas':['Danza típica del departamento de Chuquisaca',
 			'¿En qué departamento se encuentra el Área de gran importancia paleontológica ‘Cal Orcko’?'],
 		'imagenes':[
 			[	"res://src/img/data/nivel1/1er_NIVEL_Eval/CH_danza1_1.png",
@@ -215,7 +215,7 @@ var data = {
 	'9': {
 		'titulo': 'Pando',
 		'datos': [
-			['La bandera del departamento de Pando es bicolor con dos franjas del mismo en la parte superior es blanco y en la inferior es verde esmeralda.',
+			['La bandera del departamento de Pando es bicolor con dos franjas del mismo, en la parte superior es blanco y en la inferior es verde esmeralda.',
 				"res://src/img/data/nivel1/PD1.png"],
 			['El monumento a los Héroes de Bahía de Tres Cabezas se encuentra en la capital de Pando, Cobija. Este monumento hace honor a la Columna Porvenir, un grupo de empresarios caucheros formado por caucheros y campesinos bolivianos. Las tres cabezas pertenecen a Nicolás Suárez, Bruno Racua y José Manuel Pando.',
 				"res://src/img/data/nivel1/PD2.png"]
@@ -280,8 +280,9 @@ func _ready():
 	var derecha_abajo = Vector2(col_pos_ini.x, col_pos_ini.y)
 	
 	#Le agregamos musica al nivel
-	SonidoM.get_node("MusicM").stream = load("res://src/Audios/sonido_ambiente_de_los_niveles.ogg")
+	SonidoM.get_node("MusicM").stream = load("res://src/Audios_Menu/sonido_ambiente_de_los_niveles.ogg")
 	SonidoM.get_node("MusicM").play()
+	
 	
 	# warning-ignore:unused_variable
 	for i in range(0, piezas.x * piezas.y):
@@ -387,12 +388,20 @@ func calcular_resultado(opcion):
 	var test = preload("res://scenes/evaluacion/Resultado.tscn").instance()
 	if opcion == elemento:
 		print('correcto')
+		#sonido bien
+		SonidoM.get_node("MusicM").stream = load("res://src/Audios_Menu/correcto.ogg")
+		SonidoM.get_node("MusicM").play()
+		
 		get_parent().add_child(test)
 		nota_nivel+=1
 		#var lugar = Vector2(640,410)
 		#test.set_global_position(lugar)	
 	else:
 		print('incorrecto')
+		#sonido incorrecto
+		SonidoM.get_node("MusicM").stream = load("res://src/Audios_Menu/error.ogg")
+		SonidoM.get_node("MusicM").play()
+		
 		test.get_node("Sprite").texture = load("res://src/img/evaluacion/mal.png")
 		get_parent().add_child(test)
 		#var lugar = Vector2(640,410)

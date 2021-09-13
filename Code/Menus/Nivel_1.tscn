@@ -2,7 +2,7 @@
 
 [ext_resource path="res://GUI/block_UI_blank@2x.png" type="Texture" id=1]
 [ext_resource path="res://GUI/desbloqueado.png" type="Texture" id=2]
-[ext_resource path="res://src/fonts/Professor Marbles 1_PersonalUseOnly.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://src/fonts/Kid Games.ttf" type="DynamicFontData" id=3]
 [ext_resource path="res://Menus/Nivel_1.gd" type="Script" id=4]
 
 [sub_resource type="DynamicFont" id=1]

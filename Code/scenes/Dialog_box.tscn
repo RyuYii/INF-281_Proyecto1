@@ -52,10 +52,10 @@ tracks/0/keys = {
 [node name="Dialog_box" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = -0.529724
-margin_top = -0.529732
-margin_right = -0.529785
-margin_bottom = -0.529724
+margin_left = 3.67194
+margin_top = 0.325417
+margin_right = 3.67188
+margin_bottom = 0.325439
 script = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
