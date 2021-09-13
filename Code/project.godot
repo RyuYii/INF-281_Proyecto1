@@ -10,14 +10,16 @@ config_version=4
 
 _global_script_classes=[  ]
 _global_script_class_icons={
-
 }
 
 [application]
 
-config/name="Code"
+config/name="GOPuzzle"
+config/description="arma el rompecabezas y escucha datos curiosos acera de los departamento y/o paises de bolivia y america"
 run/main_scene="res://Menus/MainMenu.tscn"
-config/icon="res://icon.png"
+boot_splash/image="res://src/img/carga/carga.png"
+boot_splash/bg_color=Color( 0.12549, 0.145098, 0.192157, 1 )
+config/icon="res://src/img/carga/icono.png"
 
 [audio]
 
@@ -31,7 +33,7 @@ SonidoM="*res://Singleton/SonidoM.tscn"
 [display]
 
 window/size/width=1280
-window/size/height=820
+window/size/height=800
 
 [rendering]
 

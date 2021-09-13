@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=2]
 
-[sub_resource type="Animation" id=3]
+[sub_resource type="Animation" id=1]
 resource_name = "TextDisplay"
 length = 2.0
 tracks/0/type = "value"
@@ -18,4 +18,4 @@ tracks/0/keys = {
 
 [node name="BodyAnimationPlayer" type="AnimationPlayer"]
 autoplay = "TextDisplay"
-anims/TextDisplay = SubResource( 3 )
+anims/TextDisplay = SubResource( 1 )

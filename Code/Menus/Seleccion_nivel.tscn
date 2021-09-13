@@ -14,7 +14,7 @@
 size = 70
 font_data = ExtResource( 3 )
 
-[sub_resource type="DynamicFont" id=3]
+[sub_resource type="DynamicFont" id=2]
 size = 30
 font_data = ExtResource( 4 )
 
@@ -82,7 +82,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 margin_right = -384.003
 margin_bottom = -138.0
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 2 )
 custom_colors/font_color = Color( 0.27451, 0.184314, 0.0705882, 1 )
 text = "Volver al Menú Principal"
 align = 1
@@ -101,4 +101,5 @@ margin_bottom = 235.997
 position = Vector2( 833.239, 424.439 )
 scale = Vector2( 0.364059, 0.397194 )
 texture = ExtResource( 9 )
+
 [connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]

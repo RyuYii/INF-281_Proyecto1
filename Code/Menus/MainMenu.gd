@@ -11,13 +11,9 @@ func _ready():
 	#Le agregamos musica al Menú Principal
 	SonidoM.get_node("MusicM").stream = load("res://src/Audios_Menu/musica _del_menu.ogg")
 	SonidoM.get_node("MusicM").play()
-
-
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
-
-
 func _on_Play_pressed():
 	get_tree().change_scene("res://Menus/Seleccion_nivel.tscn")
 

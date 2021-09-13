@@ -31,7 +31,7 @@ __meta__ = {
 }
 
 [node name="fondo3" type="Sprite" parent="."]
-position = Vector2( 641.251, 409.537 )
+position = Vector2( 634.251, 407.537 )
 scale = Vector2( 1.78798, 1.82845 )
 texture = ExtResource( 6 )
 
@@ -142,6 +142,7 @@ margin_left = -676.244
 margin_top = 2.11893
 margin_right = 71.7557
 margin_bottom = 235.119
+
 [connection signal="pressed" from="VBoxContainer2/Play" to="." method="_on_Play_pressed"]
 [connection signal="pressed" from="VBoxContainer2/Creditos" to="." method="_on_Creditos_pressed"]
 [connection signal="pressed" from="VBoxContainer2/Creditos" to="." method="_on_Settings_pressed"]
